@@ -60,7 +60,8 @@ def test_stats_effective_pages_and_lifecycle_counters(h):
     assert (
         sum(a["effective_intent_counts_page"].values()) + sum(b["effective_intent_counts_page"].values()) == 7
     )
-    assert a["semantic_matching_available"] is False
+    assert a["semantic_matching_available"] is True
+    assert a["assessment_total"] == 0
 
 
 def test_persistent_storage_pickle_and_fresh_root_rebind(h, contract_module):

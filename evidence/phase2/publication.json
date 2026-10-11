@@ -1,0 +1,22 @@
+{
+  "repository": "halihalibt/semantic-cycle-accord-genlayer",
+  "branch": "phase2-consensus-core",
+  "starting_main": "cc773e936cf6184d0b3f9447771ac804e597bfe7",
+  "published_tested_implementation_head": "91d6720e2ccd0b267d607a2005ce32e8de4c9d70",
+  "implementation_tree": "92722dc4ea4141c5812db4fd1fba51c677990a25",
+  "draft_pr_url": "https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/2",
+  "pr_number": 2,
+  "state": "OPEN",
+  "draft": true,
+  "merged": false,
+  "publication_channel": "Connected GitHub plugin, halihalibt account; created content tree equals verified local tree",
+  "final_head_provenance": "This publication record is introduced by a reporting-only commit, whose SHA is resolved from GitHub branch/PR head and recorded in final execution response; source and tests unchanged",
+  "canonical_contract_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "prompt_version": "SCA3-CANONICAL-CLASSIFICATION-V1",
+  "prompt_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+  "pass": 505,
+  "fail": 0,
+  "skip": 0,
+  "applicable_not_run": 0,
+  "next_action": "STOP; independent review; no merge or Phase 3 authorization"
+}

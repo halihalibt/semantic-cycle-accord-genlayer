@@ -1,0 +1,42 @@
+{
+  "provenance": "Executed before production source edits against canonical Phase 1 baseline; source and output retained",
+  "baseline_main": "cc773e936cf6184d0b3f9447771ac804e597bfe7",
+  "genvm_release": "v0.2.16",
+  "archive_sha256": "4f0b358ec98ec148be9b95cdfb0f0e1a6cbe64da0194fdfac3fffc6f5d1d93e2",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "stdlib": "py-lib-genlayer-std:11rhn002yfajawsz7fai6mykznbxkxs6l91iskj5cm82c92qhy3v",
+  "pinned_sdk_source_sha256": {
+    "genlayer/gl/vm.py": "97498285cd79a66ffe95ef2c33c4d2c6c0ac93faa03830a138d6b9ccdfbbdd09",
+    "genlayer/gl/nondet/__init__.py": "8031f03b3ad59cae526e788853ef749aa2ebc283dbfbd5470c5383fb651a4698"
+  },
+  "signatures": [
+    "run_nondet_unsafe(leader_fn, validator_fn, /)",
+    "validator_fn(Result) -> bool",
+    "Return.calldata",
+    "UserError.message",
+    "VMError.message",
+    "exec_prompt(prompt, **config) with response_format=text|json"
+  ],
+  "probe_actual_output": {
+    "custom_api": "run_nondet_unsafe",
+    "json_response": "dict",
+    "captured_validator_agreement": "PASS",
+    "independent_disagreement": "PASS",
+    "Return_UserError_VMError_unknown": "PASS",
+    "malformed_and_exception": "PASS",
+    "storage_unchanged": "PASS",
+    "network_calls": 0,
+    "limitation": "Direct Mode captures validators; does not enforce consensus before deterministic writes"
+  },
+  "direct_mode_version": "0.29.2",
+  "direct_api": "VMContext.run_validator(*, leader_result=sentinel, leader_error=None, index=-1)",
+  "direct_patch_findings": "Unsafe Direct Mode runs Leader without automatic callback gating or closure pickling. Production closures are independently roundtrip tested with bundled cloudpickle; run_validator explicitly exercises captured real callback.",
+  "official_documentation_reviewed": [
+    "https://docs.genlayer.com/developers/intelligent-contracts/features/non-determinism",
+    "https://docs.genlayer.com/developers/intelligent-contracts/features/calling-llms",
+    "https://docs.genlayer.com/developers/intelligent-contracts/equivalence-principle",
+    "https://docs.genlayer.com/developers/intelligent-contracts/crafting-prompts",
+    "https://docs.genlayer.com/developers/intelligent-contracts/testing",
+    "https://docs.genlayer.com/api-references/genlayer-test/direct"
+  ]
+}

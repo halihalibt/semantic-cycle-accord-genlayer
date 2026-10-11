@@ -8,10 +8,19 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 WRITES = frozenset(
-    {"create_intent", "update_intent", "cancel_intent", "confirm_cycle", "decline_cycle", "expire_cycle"}
+    {
+        "create_intent",
+        "update_intent",
+        "cancel_intent",
+        "confirm_cycle",
+        "decline_cycle",
+        "expire_cycle",
+        "assess_cycle",
+    }
 )
 VIEWS = frozenset(
     {
+        "get_assessment",
         "get_intent",
         "get_cycle",
         "get_intents_page",
@@ -29,7 +38,7 @@ def validate_schema(output: str) -> dict:
     schema = result.get("schema")
     methods = schema.get("methods") if isinstance(schema, dict) else None
     if not isinstance(methods, dict) or set(methods) != WRITES | VIEWS:
-        raise ValueError("Schema must export exactly the approved 12 public methods")
+        raise ValueError("Schema must export exactly the approved 14 public methods")
     for name, method in methods.items():
         if not isinstance(method, dict) or method.get("readonly") is not (name in VIEWS):
             raise ValueError(f"Incorrect readonly classification: {name}")
@@ -46,7 +55,7 @@ def verify_schema(linter: str, env: dict) -> dict:
         text=True,
     )
     result = validate_schema(completed.stdout)
-    print("Schema verification PASS: exactly 12 public methods, 6 writes / 6 views")
+    print("Schema verification PASS: exactly 14 public methods, 7 writes / 7 views")
     return result
 
 

@@ -1,0 +1,34 @@
+import json, sys
+from pathlib import Path
+from gltest.direct import VMContext, deploy_contract
+from gltest.direct.sdk_loader import CACHE_DIR, extract_runner
+pickler=extract_runner(CACHE_DIR/'genvm-universal-v0.2.16.tar.xz','py-lib-cloudpickle','1dlk6mnfabi0z7r39635amyfzw8xb6rm8bv4pmgv6ji1bfx9hghd','v0.2.16')
+sys.path.insert(0,str(pickler/'src'))
+vm=VMContext(); vm._chain_id=61999
+with vm.activate():
+    deploy_contract(Path('contracts/semantic_cycle_accord.py'),vm,sdk_version='v0.2.16')
+    from genlayer import gl
+    prompt='SCA3 offline API probe'
+    def leader():
+        value=gl.nondet.exec_prompt(prompt,response_format='json')
+        assert type(value) is dict and set(value)=={'decisions'}
+        return value['decisions']
+    def validator(result):
+        if type(result) is not gl.vm.Return: return False
+        try: return result.calldata==leader()
+        except Exception: return False
+    before=vm._storage.snapshot()
+    vm.mock_llm('SCA3', '{"decisions":["FIT","FIT","FIT"]}')
+    assert gl.vm.run_nondet_unsafe(leader,validator)==['FIT']*3
+    assert vm.run_validator() is True
+    vm.clear_mocks(); vm.mock_llm('SCA3','{"decisions":["FIT","UNSURE","FIT"]}')
+    assert vm.run_validator() is False
+    assert vm.run_validator(leader_error=ValueError('probe')) is False
+    assert validator(gl.vm.VMError('probe')) is False
+    assert validator(['FIT']*3) is False
+    vm.clear_mocks(); vm.mock_llm('SCA3','invalid json')
+    assert vm.run_validator() is False
+    vm.clear_mocks()
+    assert vm.run_validator() is False
+    assert vm._storage.snapshot()==before
+    print(json.dumps({'custom_api':'run_nondet_unsafe','json_response':'dict','captured_validator_agreement':'PASS','independent_disagreement':'PASS','Return_UserError_VMError_unknown':'PASS','malformed_and_exception':'PASS','storage_unchanged':'PASS','network_calls':0,'limitation':'Direct Mode captures validators; does not enforce consensus before deterministic writes'}))
