@@ -1,0 +1,11 @@
+{
+  "phase": "4B",
+  "base_sha": "61f2149996be02a0da4646082a66f3f03a3cb33c",
+  "branch": "phase4b-real-deployment-evidence",
+  "package_commit": "35ac2d02f7a99a8efb84d1be8d60caadf0b043b1",
+  "package_tree": "729bc53d0034e7ec576bbc41c58a5e9e7783715f",
+  "draft_pr_url": "https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/5",
+  "draft_pr_number": 5,
+  "publication_observed_state": "OPEN_DRAFT_UNMERGED",
+  "final_head_resolution": "Read current branch ref or PR head_sha; this metadata does not claim its own self-referential commit SHA."
+}
