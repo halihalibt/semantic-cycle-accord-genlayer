@@ -1,0 +1,313 @@
+{
+  "scope": "read-only; no signing, no transaction submission, no contract execution or fake transaction identifiers",
+  "checks": [
+    {
+      "timestamp_utc": "2026-10-11T15:14:31.307291+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_chainId",
+        "params": []
+      },
+      "expected": "0xf22f / 61999",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0xf22f",
+        "id": 1
+      },
+      "classification": "VERIFIED: actual read-only response",
+      "matches_expected": true
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:14:40.893528+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "eth_blockNumber",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x6acba7e9",
+        "id": 2
+      },
+      "classification": "VERIFIED: actual read-only response"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:14:49.676332+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "eth_syncing",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": false,
+        "id": 3
+      },
+      "classification": "VERIFIED: actual read-only response"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:14:56.488867+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "web3_clientVersion",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32601,
+          "message": "Method not found: web3_clientVersion"
+        },
+        "id": 4
+      },
+      "classification": "UNSUPPORTED"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:04.905217+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "eth_gasPrice",
+        "params": []
+      },
+      "expected": "Observe outer compatibility layer only; no protocol fee inference",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x0",
+        "id": 5
+      },
+      "classification": "VERIFIED: actual read-only response"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:13.326219+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "eth_estimateGas",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Missing required parameter: transaction"
+        },
+        "id": 6
+      },
+      "classification": "LIMITED: dispatcher recognized; missing params; runtime semantics not proven"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:21.909421+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "method": "gen_getTransactionReceipt",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32601,
+          "message": "Method not found: gen_getTransactionReceipt"
+        },
+        "id": 7
+      },
+      "classification": "UNSUPPORTED"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:30.301225+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "method": "gen_getTransactionStatus",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Missing required parameter: transaction_hash"
+        },
+        "id": 8
+      },
+      "classification": "LIMITED: dispatcher recognized; missing params; runtime semantics not proven"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:38.730708+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "method": "eth_getTransactionReceipt",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Missing required parameter: transaction_hash"
+        },
+        "id": 9
+      },
+      "classification": "LIMITED: dispatcher recognized; missing params; runtime semantics not proven"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:47.339944+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "method": "eth_getTransactionByHash",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Missing required parameter: transaction_hash"
+        },
+        "id": 10
+      },
+      "classification": "LIMITED: dispatcher recognized; missing params; runtime semantics not proven"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:15:56.490853+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "sim_getTransactionByHash",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32601,
+          "message": "Method not found: sim_getTransactionByHash"
+        },
+        "id": 11
+      },
+      "classification": "UNSUPPORTED"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:16:05.337260+00:00",
+      "url": "https://studio.genlayer.com/api",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "gen_simulate",
+        "params": []
+      },
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32601,
+          "message": "Method not found: gen_simulate"
+        },
+        "id": 12
+      },
+      "classification": "UNSUPPORTED"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:16:13.912208+00:00",
+      "url": "https://studio.genlayer.com/",
+      "request": null,
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "bytes": 2331,
+      "html_title": "GenLayer - The Intelligence Layer of the Internet",
+      "classification": "VERIFIED: actual read-only response"
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:16:22.330598+00:00",
+      "url": "https://explorer-studio.genlayer.com/",
+      "request": null,
+      "expected": "read-only response; missing parameters may establish dispatch but not usable method semantics",
+      "http_status": 200,
+      "bytes": 240960,
+      "html_title": "GenLayer Studio Explorer",
+      "classification": "VERIFIED: actual read-only response"
+    }
+  ],
+  "earlier_attempts": [
+    {
+      "transport": "Python urllib",
+      "time_range_utc": "2026-10-11T15:13:55Z\u201315:14:31Z",
+      "methods": [
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_syncing"
+      ],
+      "error": "HTTP 403",
+      "classification": "transport limited; subsequent curl responses succeeded"
+    },
+    {
+      "transport": "Python urllib",
+      "method": "web3_clientVersion",
+      "error": "Remote end closed connection without response",
+      "classification": "transport limited"
+    }
+  ],
+  "separate_initial_curl_check": {
+    "method": "eth_chainId",
+    "params": [],
+    "response": {
+      "jsonrpc": "2.0",
+      "result": "0xf22f",
+      "id": 1
+    },
+    "timestamp_precision": "observed during preflight before recorded probe; exact timestamp not captured"
+  },
+  "browser_observation": {
+    "timestamp_utc": "2026-10-11T15:14:00Z (approximate observation time)",
+    "url": "https://studio.genlayer.com/contracts",
+    "observed": [
+      "Your Contracts",
+      "upload icon",
+      "default templates",
+      "account/balance header",
+      "Read logs controls"
+    ],
+    "not_observed": [
+      "deployment dialog",
+      "constructor dialog",
+      "fee dialog",
+      "user wallet signing"
+    ],
+    "actions": "read-only page/DOM/screenshot observation; no upload, account creation/import, faucet or transaction click"
+  }
+}

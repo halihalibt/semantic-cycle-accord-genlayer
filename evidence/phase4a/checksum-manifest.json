@@ -1,0 +1,7 @@
+{
+  "contract_file_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "trusted_prompt_constant_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+  "trusted_prompt_identity": "UTF-8 CANONICAL_PROMPT constant without trailing newline; NOT whole markdown file",
+  "prompt_document_file_sha256": "0fa05351158c059592afa2dbb8deefd80bf1367709a3a46b8825eb6554a87197",
+  "uv_lock_sha256": "6fa79f33e50bf62c62ee2fc819bc2bc84565eb9b558dd68d8c9a5a15b77de905"
+}
