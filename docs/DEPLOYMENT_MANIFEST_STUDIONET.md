@@ -1,5 +1,10 @@
 # Canonical deployment manifest — Stable Studionet
 
+Current E2E evidence: [Phase 4C report](PHASE_4C_REPORT.md) and
+[E2E index](PHASE_4C_E2E_EVIDENCE_INDEX.md). The same deployment is unchanged;
+current state has one ACTIVE positive Cycle and one negative NOT_MATCHED Assessment.
+The following deployment and empty-initial-state records describe Phase 4B.
+
 Phase 4B verified deployment only. Authoritative machine-readable record:
 [deployment-record.json](../evidence/phase4b/deployment-record.json).
 

@@ -1,0 +1,363 @@
+{
+  "provenance": "Decoded independent latest-final gen_call results; raw requests and original responses in rpc/.",
+  "reads": {
+    "protocol-stats": {
+      "aborted_total": 0,
+      "active_total": 1,
+      "assessment_total": 2,
+      "cycle_total": 1,
+      "effective_intent_counts_page": {
+        "CANCELLED": 0,
+        "CONSUMED": 3,
+        "EXPIRED": 0,
+        "OPEN": 3,
+        "RESERVED": 0
+      },
+      "expired_cycles_cleaned": 0,
+      "has_more": false,
+      "intent_total": 6,
+      "network_id": 61999,
+      "next_offset": 6,
+      "offset": 0,
+      "protocol": "SCA-3-V1",
+      "semantic_matching_available": true
+    },
+    "cycle-1": {
+      "canonical_snapshot": "[\"SCA-3-V1\",61999,\"0x84e9284448d4cd16dcbbcbd8104449b11209c6f0\",[[1,\"0x22acaa233b7b985b36ef168f2de9295334065b15\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",1,1792350285,3],[3,\"0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",1,1792350285,2],[2,\"0x418c0a70603f8231cd99b1f37dfc49300dcd024e\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",1,1792350285,1]]]",
+      "confirmation_count": 3,
+      "confirmation_deadline": 1792005850,
+      "confirmations": [
+        true,
+        true,
+        true
+      ],
+      "created_at": 1791746650,
+      "cycle_id": 1,
+      "edges": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "found": true,
+      "intent_ids": [
+        1,
+        3,
+        2
+      ],
+      "owners": [
+        "0x22acaa233b7b985b36ef168f2de9295334065b15",
+        "0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61",
+        "0x418c0a70603f8231cd99b1f37dfc49300dcd024e"
+      ],
+      "snapshot_id": "48e1c68d358f67368c5d8b478e9d450401be06cdf91e90b6b8b94932d2951ede",
+      "status": "ACTIVE",
+      "stored_status": "ACTIVE",
+      "terms": [
+        [
+          1,
+          "0x22acaa233b7b985b36ef168f2de9295334065b15",
+          "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+          "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+          "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+          "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+          1,
+          1792350285,
+          3
+        ],
+        [
+          3,
+          "0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61",
+          "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+          "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+          "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+          "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+          1,
+          1792350285,
+          2
+        ],
+        [
+          2,
+          "0x418c0a70603f8231cd99b1f37dfc49300dcd024e",
+          "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+          "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+          "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+          "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+          1,
+          1792350285,
+          1
+        ]
+      ],
+      "versions": [
+        1,
+        1,
+        1
+      ]
+    },
+    "cycle-2": {
+      "found": false
+    },
+    "cycles-page": {
+      "has_more": false,
+      "next_offset": 1,
+      "records": [
+        {
+          "canonical_snapshot": "[\"SCA-3-V1\",61999,\"0x84e9284448d4cd16dcbbcbd8104449b11209c6f0\",[[1,\"0x22acaa233b7b985b36ef168f2de9295334065b15\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",1,1792350285,3],[3,\"0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",1,1792350285,2],[2,\"0x418c0a70603f8231cd99b1f37dfc49300dcd024e\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",1,1792350285,1]]]",
+          "confirmation_count": 3,
+          "confirmation_deadline": 1792005850,
+          "confirmations": [
+            true,
+            true,
+            true
+          ],
+          "created_at": 1791746650,
+          "cycle_id": 1,
+          "edges": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "intent_ids": [
+            1,
+            3,
+            2
+          ],
+          "owners": [
+            "0x22acaa233b7b985b36ef168f2de9295334065b15",
+            "0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61",
+            "0x418c0a70603f8231cd99b1f37dfc49300dcd024e"
+          ],
+          "snapshot_id": "48e1c68d358f67368c5d8b478e9d450401be06cdf91e90b6b8b94932d2951ede",
+          "status": "ACTIVE",
+          "stored_status": "ACTIVE",
+          "terms": [
+            [
+              1,
+              "0x22acaa233b7b985b36ef168f2de9295334065b15",
+              "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+              "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+              "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+              "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+              1,
+              1792350285,
+              3
+            ],
+            [
+              3,
+              "0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61",
+              "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+              "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+              "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+              "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+              1,
+              1792350285,
+              2
+            ],
+            [
+              2,
+              "0x418c0a70603f8231cd99b1f37dfc49300dcd024e",
+              "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+              "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+              "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+              "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+              1,
+              1792350285,
+              1
+            ]
+          ],
+          "versions": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "total": 1
+    },
+    "intent-1": {
+      "cycle_id": 1,
+      "expires_at": 1792350285,
+      "found": true,
+      "intent_id": 1,
+      "need_description": "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+      "need_requirements": "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+      "offer_description": "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+      "offer_limitations": "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+      "owner": "0x22acaa233b7b985b36ef168f2de9295334065b15",
+      "status": "CONSUMED",
+      "stored_status": "CONSUMED",
+      "version": 1
+    },
+    "intent-2": {
+      "cycle_id": 1,
+      "expires_at": 1792350285,
+      "found": true,
+      "intent_id": 2,
+      "need_description": "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+      "need_requirements": "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+      "offer_description": "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+      "offer_limitations": "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+      "owner": "0x418c0a70603f8231cd99b1f37dfc49300dcd024e",
+      "status": "CONSUMED",
+      "stored_status": "CONSUMED",
+      "version": 1
+    },
+    "intent-3": {
+      "cycle_id": 1,
+      "expires_at": 1792350285,
+      "found": true,
+      "intent_id": 3,
+      "need_description": "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+      "need_requirements": "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+      "offer_description": "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+      "offer_limitations": "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+      "owner": "0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61",
+      "status": "CONSUMED",
+      "stored_status": "CONSUMED",
+      "version": 1
+    },
+    "intent-4": {
+      "cycle_id": 0,
+      "expires_at": 1792353240,
+      "found": true,
+      "intent_id": 4,
+      "need_description": "Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+      "need_requirements": "Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.",
+      "offer_description": "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+      "offer_limitations": "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+      "owner": "0x22acaa233b7b985b36ef168f2de9295334065b15",
+      "status": "OPEN",
+      "stored_status": "OPEN",
+      "version": 1
+    },
+    "intent-5": {
+      "cycle_id": 0,
+      "expires_at": 1792353240,
+      "found": true,
+      "intent_id": 5,
+      "need_description": "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+      "need_requirements": "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+      "offer_description": "Design one original typographic logo reading SCA-3; deliver only one transparent 1024x1024 PNG within 48 hours after cycle activation.",
+      "offer_limitations": "PNG raster output only. SVG vector output and editable vector source are explicitly unavailable. Exactly one logo; no animation or brand guide.",
+      "owner": "0x418c0a70603f8231cd99b1f37dfc49300dcd024e",
+      "status": "OPEN",
+      "stored_status": "OPEN",
+      "version": 1
+    },
+    "intent-6": {
+      "cycle_id": 0,
+      "expires_at": 1792353240,
+      "found": true,
+      "intent_id": 6,
+      "need_description": "Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.",
+      "need_requirements": "Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.",
+      "offer_description": "Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.",
+      "offer_limitations": "Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.",
+      "owner": "0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61",
+      "status": "OPEN",
+      "stored_status": "OPEN",
+      "version": 1
+    },
+    "assessment-1": {
+      "assessed_at": 1791746650,
+      "assessment_id": 1,
+      "canonical_snapshot": "[\"SCA-3-V1\",61999,\"0x84e9284448d4cd16dcbbcbd8104449b11209c6f0\",[[1,\"0x22acaa233b7b985b36ef168f2de9295334065b15\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",1,1792350285,3],[3,\"0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",1,1792350285,2],[2,\"0x418c0a70603f8231cd99b1f37dfc49300dcd024e\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",1,1792350285,1]]]",
+      "cycle_id": 1,
+      "cycle_status": "ACTIVE",
+      "decisions": [
+        "FIT",
+        "FIT",
+        "FIT"
+      ],
+      "edges": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "found": true,
+      "intent_ids": [
+        1,
+        3,
+        2
+      ],
+      "prompt_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+      "prompt_version": "SCA3-CANONICAL-CLASSIFICATION-V1",
+      "proposer": "0x22acaa233b7b985b36ef168f2de9295334065b15",
+      "result": "MATCHED",
+      "snapshot_id": "48e1c68d358f67368c5d8b478e9d450401be06cdf91e90b6b8b94932d2951ede",
+      "versions": [
+        1,
+        1,
+        1
+      ]
+    },
+    "assessment-2": {
+      "assessed_at": 1791749003,
+      "assessment_id": 2,
+      "canonical_snapshot": "[\"SCA-3-V1\",61999,\"0x84e9284448d4cd16dcbbcbd8104449b11209c6f0\",[[4,\"0x22acaa233b7b985b36ef168f2de9295334065b15\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",\"Design one original typographic logo reading SCA-3; deliver one editable SVG vector file and one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"Exactly one typographic SCA-3 logo; editable SVG and transparent 1024x1024 PNG; no animation or brand guide; delivery within 48 hours after cycle activation.\",1,1792353240,6],[6,\"0xbe8567fd2294f3ec8e68f08b58abeb5b2d28ad61\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",\"Write one English homepage for a digital-service exchange: one headline, one subheading and three service paragraphs; 300 words total; deliver one UTF-8 TXT file within 48 hours after cycle activation.\",\"Exactly one 300-word English homepage; TXT only; no website coding or publication; delivery within 48 hours after cycle activation.\",1,1792353240,5],[5,\"0x418c0a70603f8231cd99b1f37dfc49300dcd024e\",\"Design one original typographic logo reading SCA-3; deliver only one transparent 1024x1024 PNG within 48 hours after cycle activation.\",\"PNG raster output only. SVG vector output and editable vector source are explicitly unavailable. Exactly one logo; no animation or brand guide.\",\"Create one bar chart from the fixed data Copy=10, Logo=20, Chart=30; include category labels and values; deliver one SVG vector file and one 1600x900 PNG within 48 hours after cycle activation.\",\"Exactly one labeled bar chart using only Copy=10, Logo=20, Chart=30; SVG and 1600x900 PNG; no interactive dashboard; delivery within 48 hours after cycle activation.\",1,1792353240,4]]]",
+      "cycle_id": 0,
+      "cycle_status": "NONE",
+      "decisions": [
+        "FIT",
+        "FIT",
+        "NO_FIT"
+      ],
+      "edges": [
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "found": true,
+      "intent_ids": [
+        4,
+        6,
+        5
+      ],
+      "prompt_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+      "prompt_version": "SCA3-CANONICAL-CLASSIFICATION-V1",
+      "proposer": "0x22acaa233b7b985b36ef168f2de9295334065b15",
+      "result": "NOT_MATCHED",
+      "snapshot_id": "dffd6337478c50f2285a66d715d8e1ad0f65814d92602d7d64f51b1c85fb990d",
+      "versions": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

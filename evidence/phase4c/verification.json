@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "passed_groups": [
+    "51 original RPC envelopes: parse, IDs, read-only methods and chain 61999",
+    "11 transactions: hashes, typed calldata, recovered signatures and signed chain domains",
+    "11 finalized successful Returns, accepted rounds, zero actual rotations and exact vote mapping",
+    "35 agree / 20 idle records; all idle ERRORs are explicit quorum cancellation, no disagreement",
+    "12 latest-final reads and four repeated reads reproduce the persisted final state",
+    "Six create Returns/owners/versions/exact frozen vectors/expiry bounds and final intent states",
+    "Positive/negative assessment decisions, raw Leader eq outputs and two non-Leader agreeing AI receipts each",
+    "Canonical snapshots independently rebuilt from immutable intent terms and SHA256 reproduced",
+    "Three true confirmations: identical snapshot, three distinct signatures and valid deadline",
+    "ACTIVE original Cycle, no Cycle #2, exact final counters and full page coverage",
+    "Fresh deployment calldata source byte identity, frozen main source and trusted Prompt SHA256",
+    "60 original screenshot manifest records; public upload blocked by automatic approval review",
+    "60 private original screenshot PNG signatures, lengths and SHA256",
+    "11 browser-observed Explorer URL records correspond to independently verified transaction hashes",
+    "Evidence-only allowlist, production/Prompt/lock/vector/plan unchanged, historical checkpoint retained",
+    "All relative Markdown links in changed documentation resolve",
+    "Package checksum manifest: every listed raw/derived/document/script/screenshot byte hash matches"
+  ],
+  "failed_groups": [],
+  "not_run": [
+    "Contract regression suite (evidence-only scope)",
+    "Real-node unexpected mid-write rollback",
+    "Service delivery",
+    "Complete production security certification",
+    "New write transactions"
+  ],
+  "evidence_gaps": [
+    "Original screenshot public upload rejected by automatic approval review; private originals and public hash inventory preserved",
+    "Original machine-readable historical intermediate state reads not available; original user screenshots retained privately",
+    "Raw per-Validator model response texts/full prompts not exposed in acquired receipts",
+    "Fee estimate, budget and consumed GEN not acquired"
+  ],
+  "local_checks": {
+    "offline_evidence_verifier": "PASS (17 groups, private screenshots supplied)",
+    "ruff_evidence_verifier": "PASS",
+    "git_diff_check": "PASS",
+    "contract_regression_suite": "NOT RUN",
+    "original_png_public_upload": "BLOCKED by automatic approval review"
+  }
+}

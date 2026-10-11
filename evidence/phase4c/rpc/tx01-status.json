@@ -1,0 +1,16 @@
+{
+  "label": "tx01-status",
+  "timestamp_utc": "2026-10-11T20:19:14.134949+00:00",
+  "url": "https://studio.genlayer.com/api",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "tx01-status",
+    "method": "gen_getTransactionStatus",
+    "params": [
+      "0xce94c5a03d32d0af9592ee1060667ccff19e8c47e3d4f56f1e1e4f0636c19e92"
+    ]
+  },
+  "exit_code": 0,
+  "stdout": "{\"jsonrpc\":\"2.0\",\"result\":\"FINALIZED\",\"id\":\"tx01-status\"}",
+  "stderr": ""
+}

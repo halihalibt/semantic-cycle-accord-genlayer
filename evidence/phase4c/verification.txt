@@ -1,0 +1,31 @@
+Offline Phase 4C evidence verification: PASS
+PASS: 51 original RPC envelopes: parse, IDs, read-only methods and chain 61999
+PASS: 11 transactions: hashes, typed calldata, recovered signatures and signed chain domains
+PASS: 11 finalized successful Returns, accepted rounds, zero actual rotations and exact vote mapping
+PASS: 35 agree / 20 idle records; all idle ERRORs are explicit quorum cancellation, no disagreement
+PASS: 12 latest-final reads and four repeated reads reproduce the persisted final state
+PASS: Six create Returns/owners/versions/exact frozen vectors/expiry bounds and final intent states
+PASS: Positive/negative assessment decisions, raw Leader eq outputs and two non-Leader agreeing AI receipts each
+PASS: Canonical snapshots independently rebuilt from immutable intent terms and SHA256 reproduced
+PASS: Three true confirmations: identical snapshot, three distinct signatures and valid deadline
+PASS: ACTIVE original Cycle, no Cycle #2, exact final counters and full page coverage
+PASS: Fresh deployment calldata source byte identity, frozen main source and trusted Prompt SHA256
+PASS: 60 original screenshot manifest records; public upload blocked by automatic approval review
+PASS: 60 private original screenshot PNG signatures, lengths and SHA256
+PASS: 11 browser-observed Explorer URL records correspond to independently verified transaction hashes
+PASS: Evidence-only allowlist, production/Prompt/lock/vector/plan unchanged, historical checkpoint retained
+PASS: All relative Markdown links in changed documentation resolve
+PASS: Package checksum manifest: every listed raw/derived/document/script/screenshot byte hash matches
+FAIL: none
+PASS: Ruff evidence verifier
+PASS: git diff --check
+NOT RUN: Contract regression suite (evidence-only scope)
+NOT RUN: Real-node unexpected mid-write rollback
+NOT RUN: Service delivery
+NOT RUN: Complete production security certification
+NOT RUN: New write transactions
+EVIDENCE GAP: Original screenshot public upload rejected by automatic approval review; private originals and public hash inventory preserved
+EVIDENCE GAP: Original machine-readable historical intermediate state reads not available; original user screenshots retained privately
+EVIDENCE GAP: Raw per-Validator model response texts/full prompts not exposed in acquired receipts
+EVIDENCE GAP: Fee estimate, budget and consumed GEN not acquired
+PUBLIC PNG UPLOAD: BLOCKED by automatic approval review; no images published

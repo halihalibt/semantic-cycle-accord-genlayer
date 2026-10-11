@@ -1,0 +1,14 @@
+{
+  "label": "chain-id",
+  "timestamp_utc": "2026-10-11T20:19:14.133940+00:00",
+  "url": "https://studio.genlayer.com/api",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "chain-id",
+    "method": "eth_chainId",
+    "params": []
+  },
+  "exit_code": 0,
+  "stdout": "{\"jsonrpc\":\"2.0\",\"result\":\"0xf22f\",\"id\":\"chain-id\"}",
+  "stderr": ""
+}
