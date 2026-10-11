@@ -1,0 +1,126 @@
+{
+  "execution_level": "isolated official GenVM v0.2.16 WASM; disposable host state; no blockchain",
+  "source_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "results": [
+    {
+      "method": "constructor",
+      "command": [
+        "/workspace/scratch/97317a116709/genvm-offline/lib/libc.so",
+        "/workspace/scratch/97317a116709/genvm-offline/executor/v0.2.16/bin/genvm",
+        "--config",
+        "/workspace/scratch/97317a116709/genvm-offline/offline-config.yaml",
+        "run",
+        "--host",
+        "fd://4",
+        "--permissions",
+        "rw"
+      ],
+      "exit_code": 0,
+      "kind": "Return",
+      "data": null,
+      "storage_delta_count": 4,
+      "host_reads": 14,
+      "stdout": "",
+      "stderr": "{\"level\":\"info\",\"target\":\"genvm_common\",\"message\":\"logging initialized\",\"version\":\"v0.2.16-x86_64-linux-release\",\"file\":\"common/src/lib.rs:75\",\"ts\":\"1791729617303\"}\n{\"level\":\"info\",\"target\":\"genvm::exe::run\",\"message\":\"genvm id\",\"genvm_id\":\"18086884643618654689\",\"file\":\"src/exe/run.rs:172\",\"ts\":\"1791729617303\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"2.066653ms\",\"path\":\"softfloat:08g85lmbfjngvvjyx1gr1pyk61nqba0y42gba8wrb1qd3zkv2gmd:softfloat.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729617364\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"733.590666ms\",\"path\":\"cpython:1bk9g3zgym0rrpd9lk584cxfaa4rg0cz36w6xhzkqdj1m2p4xa9n:cpython.det.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729618285\"}\n{\"level\":\"info\",\"target\":\"genvm\",\"message\":\"metrics\",\"metrics\":{\"gvm\":{\"hosts\":[{\"time\":849}],\"llm_module\":{\"calls\":0,\"time\":0},\"supervisor\":{\"compilation_time\":924015,\"compiled_modules\":2,\"precompile_hits\":0},\"web_module\":{\"calls\":0,\"time\":0}},\"llm\":null,\"web\":null},\"file\":\"src/lib.rs:260\",\"ts\":\"1791729618385\"}\n"
+    },
+    {
+      "method": "get_protocol_stats",
+      "command": [
+        "/workspace/scratch/97317a116709/genvm-offline/lib/libc.so",
+        "/workspace/scratch/97317a116709/genvm-offline/executor/v0.2.16/bin/genvm",
+        "--config",
+        "/workspace/scratch/97317a116709/genvm-offline/offline-config.yaml",
+        "run",
+        "--host",
+        "fd://4",
+        "--permissions",
+        "r"
+      ],
+      "exit_code": 0,
+      "kind": "Return",
+      "data": {
+        "aborted_total": 0,
+        "active_total": 0,
+        "assessment_total": 0,
+        "cycle_total": 0,
+        "effective_intent_counts_page": {
+          "CANCELLED": 0,
+          "CONSUMED": 0,
+          "EXPIRED": 0,
+          "OPEN": 0,
+          "RESERVED": 0
+        },
+        "expired_cycles_cleaned": 0,
+        "has_more": false,
+        "intent_total": 0,
+        "network_id": 61999,
+        "next_offset": 0,
+        "offset": 0,
+        "protocol": "SCA-3-V1",
+        "semantic_matching_available": true
+      },
+      "storage_delta_count": 0,
+      "host_reads": 14,
+      "stdout": "",
+      "stderr": "{\"level\":\"info\",\"target\":\"genvm_common\",\"message\":\"logging initialized\",\"version\":\"v0.2.16-x86_64-linux-release\",\"file\":\"common/src/lib.rs:75\",\"ts\":\"1791729618403\"}\n{\"level\":\"info\",\"target\":\"genvm::exe::run\",\"message\":\"genvm id\",\"genvm_id\":\"6459251218483809190\",\"file\":\"src/exe/run.rs:172\",\"ts\":\"1791729618403\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"2.212329ms\",\"path\":\"softfloat:08g85lmbfjngvvjyx1gr1pyk61nqba0y42gba8wrb1qd3zkv2gmd:softfloat.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729618463\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"733.275989ms\",\"path\":\"cpython:1bk9g3zgym0rrpd9lk584cxfaa4rg0cz36w6xhzkqdj1m2p4xa9n:cpython.det.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729619373\"}\n{\"level\":\"info\",\"target\":\"genvm\",\"message\":\"metrics\",\"metrics\":{\"gvm\":{\"hosts\":[{\"time\":581}],\"llm_module\":{\"calls\":0,\"time\":0},\"supervisor\":{\"compilation_time\":912704,\"compiled_modules\":2,\"precompile_hits\":0},\"web_module\":{\"calls\":0,\"time\":0}},\"llm\":null,\"web\":null},\"file\":\"src/lib.rs:260\",\"ts\":\"1791729619464\"}\n"
+    },
+    {
+      "method": "create_intent",
+      "command": [
+        "/workspace/scratch/97317a116709/genvm-offline/lib/libc.so",
+        "/workspace/scratch/97317a116709/genvm-offline/executor/v0.2.16/bin/genvm",
+        "--config",
+        "/workspace/scratch/97317a116709/genvm-offline/offline-config.yaml",
+        "run",
+        "--host",
+        "fd://4",
+        "--permissions",
+        "rw"
+      ],
+      "exit_code": 0,
+      "kind": "Return",
+      "data": 1,
+      "storage_delta_count": 14,
+      "host_reads": 34,
+      "stdout": "",
+      "stderr": "{\"level\":\"info\",\"target\":\"genvm_common\",\"message\":\"logging initialized\",\"version\":\"v0.2.16-x86_64-linux-release\",\"file\":\"common/src/lib.rs:75\",\"ts\":\"1791729619482\"}\n{\"level\":\"info\",\"target\":\"genvm::exe::run\",\"message\":\"genvm id\",\"genvm_id\":\"11425172984454850016\",\"file\":\"src/exe/run.rs:172\",\"ts\":\"1791729619482\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"2.043568ms\",\"path\":\"softfloat:08g85lmbfjngvvjyx1gr1pyk61nqba0y42gba8wrb1qd3zkv2gmd:softfloat.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729619541\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"684.348389ms\",\"path\":\"cpython:1bk9g3zgym0rrpd9lk584cxfaa4rg0cz36w6xhzkqdj1m2p4xa9n:cpython.det.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729620401\"}\n{\"level\":\"info\",\"target\":\"genvm\",\"message\":\"metrics\",\"metrics\":{\"gvm\":{\"hosts\":[{\"time\":1346}],\"llm_module\":{\"calls\":0,\"time\":0},\"supervisor\":{\"compilation_time\":861873,\"compiled_modules\":2,\"precompile_hits\":0},\"web_module\":{\"calls\":0,\"time\":0}},\"llm\":null,\"web\":null},\"file\":\"src/lib.rs:260\",\"ts\":\"1791729620501\"}\n"
+    },
+    {
+      "method": "get_intent",
+      "command": [
+        "/workspace/scratch/97317a116709/genvm-offline/lib/libc.so",
+        "/workspace/scratch/97317a116709/genvm-offline/executor/v0.2.16/bin/genvm",
+        "--config",
+        "/workspace/scratch/97317a116709/genvm-offline/offline-config.yaml",
+        "run",
+        "--host",
+        "fd://4",
+        "--permissions",
+        "r"
+      ],
+      "exit_code": 0,
+      "kind": "Return",
+      "data": {
+        "cycle_id": 0,
+        "expires_at": 1792584000,
+        "found": true,
+        "intent_id": 1,
+        "need_description": "Translation",
+        "need_requirements": "English",
+        "offer_description": "Logo design",
+        "offer_limitations": "One revision",
+        "owner": "0xb2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+        "status": "OPEN",
+        "stored_status": "OPEN",
+        "version": 1
+      },
+      "storage_delta_count": 0,
+      "host_reads": 31,
+      "stdout": "",
+      "stderr": "{\"level\":\"info\",\"target\":\"genvm_common\",\"message\":\"logging initialized\",\"version\":\"v0.2.16-x86_64-linux-release\",\"file\":\"common/src/lib.rs:75\",\"ts\":\"1791729620519\"}\n{\"level\":\"info\",\"target\":\"genvm::exe::run\",\"message\":\"genvm id\",\"genvm_id\":\"11681019721210224523\",\"file\":\"src/exe/run.rs:172\",\"ts\":\"1791729620519\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"2.043738ms\",\"path\":\"softfloat:08g85lmbfjngvvjyx1gr1pyk61nqba0y42gba8wrb1qd3zkv2gmd:softfloat.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729620580\"}\n{\"level\":\"info\",\"target\":\"genvm::rt::supervisor::compilation\",\"message\":\"cache compiling\",\"status\":\"done\",\"duration\":\"699.607507ms\",\"path\":\"cpython:1bk9g3zgym0rrpd9lk584cxfaa4rg0cz36w6xhzkqdj1m2p4xa9n:cpython.det.wasm\",\"file\":\"src/rt/supervisor/compilation.rs:70\",\"ts\":\"1791729621466\"}\n{\"level\":\"info\",\"target\":\"genvm\",\"message\":\"metrics\",\"metrics\":{\"gvm\":{\"hosts\":[{\"time\":1584}],\"llm_module\":{\"calls\":0,\"time\":0},\"supervisor\":{\"compilation_time\":888283,\"compiled_modules\":2,\"precompile_hits\":0},\"web_module\":{\"calls\":0,\"time\":0}},\"llm\":null,\"web\":null},\"file\":\"src/lib.rs:260\",\"ts\":\"1791729621563\"}\n"
+    }
+  ],
+  "rollback": "NOT TESTED; host applies successful Return deltas only",
+  "real_consensus": "NOT RUN",
+  "native_llm_calls": 0
+}

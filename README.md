@@ -17,14 +17,15 @@ exactly the three Intents. **ACTIVE means accepted commitment, not delivered
 services.** There are no payments, tokens, custody, reputation, arbitration,
 fulfillment guarantees or matching administrator.
 
-## Phase 2 checkpoint and execution limits
+## Phase 3 security checkpoint and execution limits
 
-This is an undeployed Phase 2 development checkpoint awaiting independent review.
+Phase 1 and Phase 2 are merged. Phase 3 local security closure awaits independent review.
 The public semantic path is implemented; offline testing uses canned native LLM
 responses and explicitly invokes captured Validators through Direct Mode.
 It is not evidence of real model accuracy, network consensus or finalized
 transactions. No deployment or onchain transaction has occurred. No frontend or
-Repository B exists. Full GenVM WASM and live execution are not verified.
+Repository B exists. Four genuine isolated v0.2.16 WASM smoke invocations passed;
+production consensus WASM, actual node rollback and live execution are not verified.
 
 The deterministic Phase 1 core, INV-01–16, original method behavior and persistent
 field prefix remain intact. Assessment fields are appended; read and storage
@@ -50,7 +51,10 @@ and test socket access blocked. The byte-layout test reads the frozen baseline
 from local git history, so retain repository history when reproducing.
 
 Phase 1 historical baseline: **229 PASS / 0 FAIL / 0 SKIP**, reproduced before edits.
-Final Phase 2 results and exact hashes are in the report and machine-readable evidence.
+Phase 2 baseline: 505 PASS, reproduced unchanged for Phase 3.
+Phase 3 complete suite: 566 PASS / 0 FAIL / 0 SKIP, with 61 targeted new cases.
+Canonical contract and trusted prompt are unchanged. Final results and exact
+hashes are in the Phase 3 report and machine-readable evidence.
 
 ## Specifications and evidence
 
@@ -59,7 +63,9 @@ Final Phase 2 results and exact hashes are in the report and machine-readable ev
 - [Canonical Prompt V1](docs/CANONICAL_CLASSIFICATION_PROMPT_V1.md)
 - [Custom consensus and full equivalence](docs/CONSENSUS_AND_EQUIVALENCE_V1.md)
 - [Phase 2 tests, fixtures and limitations](docs/PHASE_2_TEST_AND_ACCEPTANCE.md)
-- [Phase 2 report](docs/PHASE_2_REPORT.md)
+- [Phase 3 security audit](docs/PHASE_3_SECURITY_AUDIT.md) and [threat model](docs/PHASE_3_THREAT_MODEL.md)
+- [Phase 3 report](docs/PHASE_3_REPORT.md) and [tests/evidence levels](docs/PHASE_3_TEST_AND_ACCEPTANCE.md)
+- [Historical Phase 2 report](docs/PHASE_2_REPORT.md)
 - [Continuation checkpoint](PROJECT_CHECKPOINT.md)
 - [Master plan](WORK_MASTER_PLAN.md)
 - [Historical Phase 1 report](docs/PHASE_1_REPORT.md)
@@ -68,4 +74,6 @@ Local predictable failures are tested without rollback. Unexpected storage fault
 rely on GenVM transaction rollback; Direct Mode tests explicitly simulate that
 boundary and do not prove full WASM rollback. Prompt injection and systematic
 semantic error remain risks despite structured boundaries and independent checks.
-Further stages require separate user authorization. MIT License retained.
+Growing finite histories and version-based fresh assessments remain design limits.
+Phase 3 Draft PR stays unmerged. Further stages require separate user authorization.
+MIT License retained.

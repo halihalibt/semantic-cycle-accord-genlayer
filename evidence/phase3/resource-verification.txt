@@ -1,0 +1,63 @@
+{
+  "level": "SDK Direct Mode; Python allocations and storage read/write counts only",
+  "source_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "history_pages": [
+    {
+      "historical_intents": 1,
+      "returned": 1,
+      "sdk_reads": 53,
+      "sdk_writes": 0,
+      "seconds": 0.0009222419994330266,
+      "serialized_nonzero_bytes": 2447,
+      "working_slots": 1
+    },
+    {
+      "historical_intents": 50,
+      "returned": 50,
+      "sdk_reads": 2019,
+      "sdk_writes": 0,
+      "seconds": 0.003381387999979779,
+      "serialized_nonzero_bytes": 110443,
+      "working_slots": 1
+    },
+    {
+      "historical_intents": 200,
+      "returned": 50,
+      "sdk_reads": 2350,
+      "sdk_writes": 0,
+      "seconds": 0.003724549000253319,
+      "serialized_nonzero_bytes": 441043,
+      "working_slots": 1
+    }
+  ],
+  "max_input_samples": [
+    {
+      "field_utf8_bytes": 512,
+      "first_codepoint": 0,
+      "snapshot_utf8_bytes": 37169,
+      "prompt_utf8_bytes": 41112,
+      "python_peak_allocated_bytes": 177178
+    },
+    {
+      "field_utf8_bytes": 512,
+      "first_codepoint": 60,
+      "snapshot_utf8_bytes": 6449,
+      "prompt_utf8_bytes": 41112,
+      "python_peak_allocated_bytes": 145450
+    },
+    {
+      "field_utf8_bytes": 512,
+      "first_codepoint": 128578,
+      "snapshot_utf8_bytes": 6449,
+      "prompt_utf8_bytes": 10392,
+      "python_peak_allocated_bytes": 81716
+    }
+  ],
+  "conservative_bounds": {
+    "canonical_snapshot_utf8_bytes_lt": 38000,
+    "prompt_utf8_bytes_lt": 45000
+  },
+  "network_gas": "NOT MEASURED",
+  "cumulative_history": "grows; u32 SDK lengths and offsets are finite",
+  "tcp_calls": 0
+}
