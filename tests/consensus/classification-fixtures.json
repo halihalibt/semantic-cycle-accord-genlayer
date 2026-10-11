@@ -1,0 +1,119 @@
+[
+  {
+    "name": "affirmative_fit",
+    "offer": "Deliver 3 English logo concepts in SVG by 2026-10-14",
+    "limitations": "One revision included",
+    "need": "Need 3 English logo concepts in SVG",
+    "requirements": "Delivery no later than 2026-10-15",
+    "expected": "FIT",
+    "basis": "Every stated deliverable and material requirement is affirmatively supported."
+  },
+  {
+    "name": "explicit_exclusion",
+    "offer": "Provide an English text translation",
+    "limitations": "No illustrations or logo design",
+    "need": "Need a logo illustration",
+    "requirements": "Logo artwork is mandatory",
+    "expected": "NO_FIT",
+    "basis": "Mandatory artwork is explicitly excluded."
+  },
+  {
+    "name": "quantity_mismatch",
+    "offer": "Deliver exactly 2 English articles",
+    "limitations": "",
+    "need": "Need 5 English articles",
+    "requirements": "At least 5 articles",
+    "expected": "NO_FIT",
+    "basis": "Two articles cannot meet an explicit minimum of five."
+  },
+  {
+    "name": "format_mismatch",
+    "offer": "Deliver logo artwork",
+    "limitations": "PNG only; no vector output",
+    "need": "Need logo artwork",
+    "requirements": "SVG vector file is mandatory",
+    "expected": "NO_FIT",
+    "basis": "Required vector format is excluded."
+  },
+  {
+    "name": "language_mismatch",
+    "offer": "Translate text",
+    "limitations": "English only; no Chinese translation",
+    "need": "Need text translation",
+    "requirements": "Chinese output is required",
+    "expected": "NO_FIT",
+    "basis": "Mandatory Chinese output conflicts with the English-only scope."
+  },
+  {
+    "name": "deadline_mismatch",
+    "offer": "Complete the website copy by 2026-10-20",
+    "limitations": "Cannot deliver earlier than 2026-10-20",
+    "need": "Need website copy",
+    "requirements": "Must deliver by 2026-10-15",
+    "expected": "NO_FIT",
+    "basis": "Earliest supported delivery misses the mandatory deadline."
+  },
+  {
+    "name": "scope_mismatch",
+    "offer": "Edit the spelling of a page",
+    "limitations": "No rewriting or research",
+    "need": "Need researched rewritten page",
+    "requirements": "Original research and structural rewriting required",
+    "expected": "NO_FIT",
+    "basis": "Explicitly excluded research and rewriting are required."
+  },
+  {
+    "name": "similar_keywords",
+    "offer": "Review source code for spelling in comments",
+    "limitations": "No security or functionality analysis",
+    "need": "Need a code security review",
+    "requirements": "Identify security vulnerabilities",
+    "expected": "NO_FIT",
+    "basis": "A shared code-review topic does not supply the required security analysis."
+  },
+  {
+    "name": "ambiguous_scope",
+    "offer": "Help with your content",
+    "limitations": "",
+    "need": "Need a 30-second edited MP4 video",
+    "requirements": "Edited video file is mandatory",
+    "expected": "UNSURE",
+    "basis": "Vague help does not affirmatively establish video editing capability."
+  },
+  {
+    "name": "missing_material_information",
+    "offer": "Translate one page",
+    "limitations": "",
+    "need": "Need one translated page",
+    "requirements": "Spanish output required",
+    "expected": "UNSURE",
+    "basis": "Provider does not state supported translation language."
+  },
+  {
+    "name": "contradictory_critical_limitation",
+    "offer": "Deliver an SVG logo",
+    "limitations": "SVG output available; SVG output unavailable",
+    "need": "Need an SVG logo",
+    "requirements": "SVG required",
+    "expected": "UNSURE",
+    "basis": "Conflicting statements prevent reliable acceptance."
+  },
+  {
+    "name": "partial_compatibility",
+    "offer": "Write English captions",
+    "limitations": "No video editing",
+    "need": "Need English captions and an edited video",
+    "requirements": "Both deliverables required",
+    "expected": "NO_FIT",
+    "basis": "One supported deliverable cannot compensate for the excluded video."
+  },
+  {
+    "name": "multilingual_fit",
+    "offer": "提供一张中文活动海报，PNG格式",
+    "limitations": "一次修改",
+    "need": "需要一张中文活动海报",
+    "requirements": "PNG格式，一次修改",
+    "expected": "FIT",
+    "basis": "Chinese material terms are explicitly satisfied."
+  }
+]

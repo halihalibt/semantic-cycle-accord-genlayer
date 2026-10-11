@@ -1,103 +1,73 @@
-# SCA-3 V1 — Phase 1 Checkpoint
+# SCA-3 V1 — Phase 2 Continuation Checkpoint
 
-## Identity and baseline
+Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer
+Account: halihalibt; PUBLIC; MIT retained. Sole target: Stable Studionet 61999,
+https://studio.genlayer.com/api. Original Phase 1 PR #1 is merged at authoritative
+main baseline cc773e936cf6184d0b3f9447771ac804e597bfe7.
 
-- Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer
-- Owner: `halihalibt`; visibility PUBLIC; MIT License retained.
-- Work branch: `phase1-deterministic-core`; target base: `main`.
-- Initial main baseline: `98784894a470c31ca1ebe2e075092582bb88403e`.
-- Main contained only the new project's README and MIT License; no unrelated work.
-- Tested implementation commit: `76f0b6ba8515132a6468ad5f9f67067fb932861d`.
-- Draft PR: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/1 — OPEN, DRAFT, NOT MERGED.
-- Publication identifiers are recorded in `evidence/phase1/publication.json`.
-  Publication metadata distinguishes the original baseline and the patched
-  implementation; the latest HEAD is available from the existing Draft PR.
+Work branch: phase2-consensus-core. Main is not modified. Draft PR publication
+identifiers are added after the verified implementation commit is published.
+Canonical path: contracts/semantic_cycle_accord.py.
+SHA256: 88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442
+Prompt: SCA3-CANONICAL-CLASSIFICATION-V1
+Prompt SHA256: 8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3
 
-## Current acceptance
+## Frozen implementation and acceptance
 
-Phase 1 deterministic implementation and local verification are complete.
-**229 PASS / 0 FAIL / 0 SKIP / applicable NOT RUN 0** after the limited
-Phase 1 hardening amendment (original 176 cases retained; 53 added), storage serialization/reconstruction and calldata
-checks included. Ruff and pinned GenVM lint/semantic/schema checks passed.
-There is no deployment, consensus result, contract address, transaction hash,
-wallet signature, frontend, Repository B, Portal entry, or merged PR.
+Phase 2 implements actual pinned custom run_nondet_unsafe Leader/Validator and
+native exec_prompt JSON mode; every valid Leader result requires independent
+complete three-edge classification by the Validator and exact positional equality.
+Production closures capture prompt text only. Error wrappers/invalid vectors cannot
+authorize acceptance. Exactly all FIT creates MATCHED/PENDING; other valid vectors
+persist NOT_MATCHED with cycle_id=0 and unchanged OPEN Intents. Unchanged negative
+snapshots cannot fish for a new verdict; versions/rotations/direction retain frozen
+identity rules. Caller must be an actual participant. Pre/post-VM preflight and
+snapshot/counter/replay checks remain mandatory. No public supplied verdict exists.
 
-## Limited Phase 1 hardening amendment
+Three participant confirmations still produce ACTIVE/exactly three CONSUMED.
+ACTIVE means accepted commitment, never delivered service. INV-01–16 and original
+method behavior/field prefix remain intact. New typed assessment fields are appended.
+Read API: 7 WRITE / 7 VIEW, original 12 plus assess_cycle/get_assessment only.
+get_protocol_stats adds assessment_total and true availability without relabeling
+historical fixture cycles as assessments.
 
-Starting HEAD: `f70005c0251dc1a6dfb0752a8037941e7c65065e`.
-Original canonical SHA256: `628742fbceec1e8e343dc35bd2f15b78b286e7953eaaf725b5597f139fff1306` (historical).
-Patched canonical SHA256: `8a44df900eb2e286e1a035db4e7496c8923b8c7e9389dbccaf40c98a68e7c48c`.
-Final confirmation, decline, RESERVED cancellation and expiration now reject
-predictable counter overflow before mutation. The verifier machine-checks the
-exact 12-method schema and strict write/view classifications. All 53 new cases
-are enumerated in local-results.json. No toolchain, schema or business rule change.
-No RPC requests, deployment, signing or Phase 2 work in this amendment.
+Actual complete validation: 505 PASS / 0 FAIL / 0 SKIP / applicable NOT RUN 0.
+229 baseline cases reproduced before edits and retained/adapted; 276 new cases.
+GenVM AST lint (3), SDK semantic validation, exact schema and Ruff lint/format PASS.
+Native captured Validator calls, bundled cloudpickle, stored-byte reconstruction,
+calldata and original Phase 1 byte compatibility/resumed activation PASS.
+Toolchain unchanged: Python 3.12.14, GenVM v0.2.16, genlayer-test 0.29.2,
+genvm-linter 0.11.0, pytest 9.1.1, Ruff 0.14.0 and original uv.lock.
 
-## Canonical source and toolchain
+## Authoritative reads for a fresh conversation
 
-Single canonical file: `contracts/semantic_cycle_accord.py`. Source SHA-256 is
-in `evidence/phase1/local-results.json`. Preserve its pinned GenVM v0.2.16
-`py-genlayer` header. Python 3.12.14; genlayer-test 0.29.2; genvm-linter 0.11.0;
-pytest 9.1.1; Ruff 0.14.0. Use `uv.lock` and the checksum-verifying SDK bootstrap.
-Stable target remains 61999 / `https://studio.genlayer.com/api` exclusively.
+Read README.md, WORK_MASTER_PLAN.md, docs/PROTOCOL_SPEC.md,
+docs/STATE_MACHINE.md, docs/DETERMINISTIC_INVARIANTS.md,
+docs/STABLE_COMPATIBILITY.md, docs/CANONICAL_CLASSIFICATION_PROMPT_V1.md,
+docs/CONSENSUS_AND_EQUIVALENCE_V1.md, docs/PHASE_2_TEST_AND_ACCEPTANCE.md,
+docs/PHASE_2_REPORT.md, canonical contract/all tests and evidence/phase2/*.json.
+Phase 1 documents/evidence are historical and preserved; they do not override
+this newly authorized Phase 2 boundary. Their old unmerged/unimplemented status
+statements describe the checkpoint when written, not current repository status.
 
-## Read in full before continuation
+## Reproduce and limitations
 
-1. README.md
-2. docs/PROTOCOL_SPEC.md
-3. docs/STATE_MACHINE.md
-4. docs/DETERMINISTIC_INVARIANTS.md
-5. docs/STABLE_COMPATIBILITY.md
-6. docs/TEST_AND_ACCEPTANCE.md
-7. docs/PHASE_1_REPORT.md
-8. WORK_MASTER_PLAN.md
-9. contracts/semantic_cycle_accord.py and all tests
-
-## Implemented boundary
-
-Six approved writes and six approved views are public. They enforce owner and
-participant authority, full snapshots, versions, ring topology, capacity,
-expiration, reservation isolation, three confirmations, consumption, terminal
-states, declined identity protection and failure atomicity. Owner working slots
-are bounded at five; historical reads and effective statistics are paginated.
-ACTIVE means accepted commitment, not delivered service.
-
-`_prepare_cycle` is a read-only deterministic preflight. Private, undecorated
-`_reserve_accepted_cycle` consumes only topology and version inputs, reruns
-preflight, reserves the three Intents and creates PENDING. Only offline fixtures
-call this seam now. `assess_cycle` and `get_assessment` are absent; no verdict,
-prompt, fake consensus record, classification bypass or privileged approver
-exists. The public surface therefore cannot yet initiate real matching.
-
-## Frozen future consensus requirements
-
-On a separately authorized Phase 2, implement custom nondeterministic
-Leader/Validator classification of the complete three-edge ring. Validators
-independently repeat the full assessment; compare decisions rather than schema.
-Decisions are FIT / NO_FIT / UNSURE; every required edge must be FIT. After
-accepted legitimate consensus, rerun deterministic preflight before reserving.
-Do not expose FIT injection or let a centralized operator approve matching.
-Phase 1 has no canonical AI prompt and no executed semantic acceptance tests.
-
-## Verification and remaining limits
-
-```bash
 uv sync --frozen
 uv run python scripts/bootstrap_sdk.py
 uv run python scripts/verify_local.py
-```
 
-Tests are offline with socket access blocked and pytest plugin autoload disabled.
-The official bundle's cloudpickle serializes SDK roots; byte restoration into
-a new manager is separately tested. Ordinary pickle of dynamic SDK descriptors
-is unsupported. The SDK linter validated the exact runner and exports 12 methods.
-This is not full WASM execution or live consensus. No critical deterministic
-compatibility blocker remains; real-network evidence is intentionally deferred.
+Tests block sockets and retain local git history for the baseline-layout check.
+Direct Mode runs Leader then captures the Validator without enforcing real votes;
+vm.run_validator explicitly tests the actual production callback with separate
+native mocks. Canned classification fixtures do not measure model accuracy.
+Predictable/record-allocation/preflight failures preserve bytes without rollback;
+three unexpected storage-fault tests explicitly simulate a transaction boundary.
+Full WASM rollback, live consensus/finality, model accuracy, races and cross-platform
+execution remain NOT RUN. No deployment or transaction occurred; no wallet secret
+was accessed. Structured data boundaries do not prove prompt-injection immunity.
 
-## Required stop and next action
+## Mandatory stop
 
-STOP after this checkpoint. Do not merge, implement Phase 2, deploy, sign,
-submit a transaction, create Repository B/frontend, or submit to Portal without
-new explicit authorization. The next step is owner review of the Draft PR and
-Phase 1 report in the separate strategy conversation. Readiness for Phase 2 is
-technical readiness for review only; it is not authorization to start.
+After verified Draft PR publication, STOP. Await independent review. Do not merge,
+start Phase 3, create Repository B/frontend, deploy, transact, sign, change toolchain
+or network, use paid external AI or enter Portal without new explicit authorization.

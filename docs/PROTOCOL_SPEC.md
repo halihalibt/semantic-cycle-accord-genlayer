@@ -9,12 +9,11 @@ accepted the same commitment; it does not mean services have been delivered.
 No payment, custody, reputation, delivery, arbitration, token, privileged
 operator, upgrade authority, frontend, or centralized matching service exists.
 
-Phase 1 supplies only deterministic storage and transitions. Phase 2 is reserved
-for custom nondeterministic Leader/Validator execution. Each Validator must
-independently classify all three edges and compare decision fields. Outcomes
-are `FIT`, `NO_FIT`, and `UNSURE`; any required `NO_FIT` or `UNSURE` prevents
-acceptance. There is no implemented prompt, equivalence code, or assessment
-record in this phase.
+Phase 2 adds native custom nondeterministic Leader/Validator execution on the
+unchanged Phase 1 core. Every Validator independently classifies all three edges
+and compares exact position-sensitive FIT / NO_FIT / UNSURE labels. Only three
+FIT labels produce MATCHED/PENDING. All other valid vectors persist NOT_MATCHED.
+See CONSENSUS_AND_EQUIVALENCE_V1.md for the exact mechanism and offline limits.
 
 ## Storage schema
 
@@ -76,8 +75,17 @@ the actual network/contract identity. It establishes no administrator.
 | decline_cycle | cycle_id, snapshot_id | Eligible participant aborts PENDING and permanently blocks this exact snapshot |
 | expire_cycle | cycle_id | Permissionless cleanup at/after deadline; True once, False for an already cleaned EXPIRED cycle |
 
-`assess_cycle` and `get_assessment` do not exist in the Phase 1 public schema.
-There is no public accepted-verdict setter or fixture bypass.
+Phase 2 adds `assess_cycle(intent_ids, versions, edges)` as the seventh write,
+returning `{assessment_id, result, cycle_id}`. Its parameters are three IDs,
+three expected versions and three directed edges. Caller must be an actual
+participant. Preflight runs before AI and again after accepted VM output;
+immutable content is rechecked. No public method accepts a supplied verdict.
+
+`get_assessment(assessment_id)` is the seventh view. Valid missing IDs return
+found=false; invalid IDs reject. Existing records return stored canonical
+snapshot, derived IDs/versions/edges, decisions, result, cycle association,
+current effective cycle_status (NONE for negative), proposer, timestamp and
+prompt version/digest. No view calls the LLM or mutates protocol storage.
 
 | View | Arguments | Result |
 | --- | --- | --- |
@@ -110,11 +118,11 @@ no protocol writes. Input order defines the ring: edge i must be
 `[intent_ids[i], intent_ids[(i+1)%3]]`.
 
 `_reserve_accepted_cycle` is private and undecorated. It accepts topology and
-version inputs, not classifications, and has no externally callable production
-path in Phase 1. It reruns preparation immediately before writing all three
-reservations and one PENDING Cycle. Only future legitimate consensus can wire
-this boundary into a public assessment method. Tests call it through Direct
-Mode controlled fixtures; that is not evidence of semantic acceptance.
+version inputs, not classifications, and remains private/undecorated. Phase 2 assess_cycle invokes it only after
+accepted legitimate custom consensus returns exactly three FIT labels. It reruns
+preparation immediately before writing all three reservations and one PENDING
+Cycle. Historical Phase 1 test fixtures still call it internally; those fixture
+Cycles alone are not evidence of semantic acceptance.
 
 ## Snapshot identity and integrity
 
@@ -170,3 +178,31 @@ five slots; cycle operations resolve three records; pages scan at most fifty
 records. Fixed-size content is checked before storage. No public operation
 scans a wallet's complete history or all global records. Terminal mutations
 reject or are explicit idempotent expiration no-ops.
+
+## Phase 2 assessment storage and replay
+
+Append exactly three root fields after all original fields: typed
+`assessments: TreeMap[u256, Assessment]`, `assessed_snapshots: TreeMap[str, u64]`,
+and `assessment_count: u64`. The bounded @allow_storage Assessment contains ID,
+snapshot digest, canonical full snapshot, exactly three labels in DynArray[str],
+MATCHED/NOT_MATCHED result, linked cycle ID (0 when negative), transaction timestamp,
+actual proposer and constant prompt version/hash. Full snapshot preservation is
+necessary for negative records after editable Intents change; derived ID/edge
+arrays are not redundantly persisted. Historical root/Intent/Cycle layouts remain
+readable in the offline byte reconstruction test. This is not an onchain upgrade.
+
+Identical canonical negative snapshots reject DUPLICATE_ASSESSMENT before LLM
+invocation. Positive proposals/reservations and declined/expired protections
+retain original behavior. A successful version update changes the snapshot.
+Stats retain original global counters/page meanings, set semantic_matching_available
+true and add assessment_total. Fixture-created Cycles are not relabeled assessments.
+
+All predictable state/counter errors and bounded local record construction precede
+writes. Unexpected storage faults within the commit block depend on VM transaction
+rollback. Direct Mode validates expected safety without rollback and tests unexpected
+faults only with an explicitly simulated transaction boundary. Full WASM is NOT RUN.
+
+MATCHED/PENDING is distinct from wallet confirmations, ACTIVE and network FINALIZED.
+A stored assessment reflects successful contract execution, not independently
+verified blockchain finality. No finality fields, vote counts or Validator IDs are
+invented. No real transaction finality was tested in Phase 2.

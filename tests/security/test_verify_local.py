@@ -33,7 +33,7 @@ def test_schema_rejects_missing_public_method(name):
 
 
 @pytest.mark.parametrize(
-    "name", ["_reserve_accepted_cycle", "assess_cycle", "inject_ai_verdict", "extra_view"]
+    "name", ["_reserve_accepted_cycle", "set_assessment_verdict", "inject_ai_verdict", "extra_view"]
 )
 def test_schema_rejects_extra_public_method(name):
     result = approved_schema()

@@ -152,7 +152,7 @@ def test_cleanup_missing_record_preflight_is_atomic(h):
     assert h.storage() == before
 
 
-def test_only_authorized_public_surface_and_no_ai(h):
+def test_only_authorized_public_surface_and_no_bypass(h):
     source = Path("contracts/semantic_cycle_accord.py").read_text()
     tree = ast.parse(source)
     cls = next(n for n in tree.body if isinstance(n, ast.ClassDef) and n.name == "SemanticCycleAccord")
@@ -164,6 +164,8 @@ def test_only_authorized_public_surface_and_no_ai(h):
         "confirm_cycle",
         "decline_cycle",
         "expire_cycle",
+        "assess_cycle",
+        "get_assessment",
         "get_intent",
         "get_cycle",
         "get_intents_page",
@@ -172,17 +174,26 @@ def test_only_authorized_public_surface_and_no_ai(h):
         "get_protocol_stats",
     }
     for forbidden in (
-        "run_nondet",
-        "exec_prompt",
         "eq_principle",
         "strict_eq",
         "prompt_comparative",
         "prompt_non_comparative",
         "mock_llm",
-        "requests",
         "private_key",
     ):
         assert forbidden not in source
+    imports = {
+        alias.name.split(".")[0]
+        for node in ast.walk(tree)
+        if isinstance(node, ast.Import)
+        for alias in node.names
+    }
+    imports |= {
+        node.module.split(".")[0]
+        for node in ast.walk(tree)
+        if isinstance(node, ast.ImportFrom) and node.module
+    }
+    assert not imports & {"requests", "urllib", "httpx", "aiohttp"}
 
 
 def test_snapshot_canonical_unicode_roundtrip(h):
