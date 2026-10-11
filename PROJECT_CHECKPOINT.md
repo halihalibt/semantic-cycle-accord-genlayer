@@ -2,7 +2,7 @@
 
 **PHASE 4A COMPLETE — MANUAL DEPLOYMENT PACKAGE READY — AWAITING USER APPROVAL**
 
-Public Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer, owner halihalibt, MIT. Starting and unchanged main `7906f4e3c7c619ffdef0ae12147a78f5d018cebb`. PR #1/#2/#3 VERIFIED MERGED. Work branch phase4a-deployment-preflight; Draft PR is published unmerged. Actual publication identifiers: evidence/phase4a/publication.json and current GitHub branch/PR (final HEAD resolves there).
+Public Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer, owner halihalibt, MIT. Starting and unchanged main `7906f4e3c7c619ffdef0ae12147a78f5d018cebb`. PR #1/#2/#3 VERIFIED MERGED. Work branch phase4a-deployment-preflight; Draft PR #4: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/4 — VERIFIED OPEN, DRAFT, NOT MERGED. Actual publication identifiers: evidence/phase4a/publication.json and current GitHub branch/PR (final HEAD resolves there).
 
 Canonical source contracts/semantic_cycle_accord.py SHA256 `88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442`; trusted CANONICAL_PROMPT SHA256 `8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3`. Entire source, prompt/specifications, tests, historical evidence, toolchain and uv.lock unchanged.
 

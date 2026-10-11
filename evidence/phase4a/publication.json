@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-11T15:24:12.364992+00:00",
+  "repository": "halihalibt/semantic-cycle-accord-genlayer",
+  "owner": "halihalibt",
+  "visibility": "public",
+  "branch": "phase4a-deployment-preflight",
+  "starting_unchanged_main_sha": "7906f4e3c7c619ffdef0ae12147a78f5d018cebb",
+  "tested_package_commit": "26cf84e81619ec8cacf46aa2fc07ae3a1dcd7935",
+  "tested_package_tree": "4d6fdee2c5a654c70d5ebaed1cc4625c97d479f1",
+  "connector_tree_equals_locally_verified_tree": true,
+  "draft_pr_url": "https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/4",
+  "draft_pr_number": 4,
+  "observed_pr_state": "open",
+  "observed_draft": true,
+  "observed_merged": false,
+  "package_changed_files": 15,
+  "reporting_followup_files": [
+    "PROJECT_CHECKPOINT.md",
+    "docs/PHASE_4A_REPORT.md",
+    "evidence/phase4a/publication.json"
+  ],
+  "final_work_head": "Resolve from current GitHub branch/PR head_sha after this reporting-only follow-up; a commit cannot embed its own hash",
+  "no_deployment_transaction_signature_network_contract_execution_or_merge": true
+}

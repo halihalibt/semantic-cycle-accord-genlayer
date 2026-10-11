@@ -2,7 +2,7 @@
 
 **PHASE 4A COMPLETE — MANUAL DEPLOYMENT PACKAGE READY — AWAITING USER APPROVAL**
 
-Repository: https://github.com/halihalibt/semantic-cycle-accord-genlayer. Starting main: `7906f4e3c7c619ffdef0ae12147a78f5d018cebb`. Work branch: phase4a-deployment-preflight. Publication metadata is added to evidence/phase4a/publication.json after the first published commit; final work HEAD and Draft PR must be resolved from current GitHub. No self-referential final HEAD is invented in this report.
+Repository: https://github.com/halihalibt/semantic-cycle-accord-genlayer. Starting main: `7906f4e3c7c619ffdef0ae12147a78f5d018cebb`. Work branch: phase4a-deployment-preflight. Draft PR #4: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/4 — verified OPEN, DRAFT, unmerged. Tested package commit: `26cf84e81619ec8cacf46aa2fc07ae3a1dcd7935`, tree `4d6fdee2c5a654c70d5ebaed1cc4625c97d479f1`; reporting-only follow-up does not change tested source or evidence. Publication metadata is added to evidence/phase4a/publication.json after the first published commit; final work HEAD and Draft PR must be resolved from current GitHub. No self-referential final HEAD is invented in this report.
 
 566 PASS / 0 FAIL / 0 SKIP, all original tests unchanged. Ruff, GenVM AST 3 checks, SDK semantic validation, exact 7 WRITE + 7 VIEW, storage/calldata and original byte compatibility PASS. Python/toolchain/uv.lock unchanged. Four real isolated native v0.2.16 WASM Return/exit-0 smoke invocations reproduced; no network consensus inferred.
 
