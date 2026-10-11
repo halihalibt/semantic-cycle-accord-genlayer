@@ -388,6 +388,9 @@ class SemanticCycleAccord(gl.Contract):
         self._verify_snapshot(cycle)
         if cycle.confirmations[index]:
             return False
+        activates = all(cycle.confirmations[i] for i in range(3) if i != index)
+        if activates and self.active_count == MAX_U64:
+            _fail("COUNTER_OVERFLOW")
         # Preflight verifies all three even for confirmations one and two.
         cycle.confirmations[index] = True
         if all(cycle.confirmations):
@@ -397,6 +400,11 @@ class SemanticCycleAccord(gl.Contract):
             self.active_count = u64(self.active_count + 1)
         return True
 
+    def _preflight_finish_counter(self, status: str) -> None:
+        counter = self.aborted_count if status == "ABORTED" else self.expired_cycle_count
+        if counter == MAX_U64:
+            _fail("COUNTER_OVERFLOW")
+
     def _finish(self, cycle: Cycle, status: str) -> None:
         if len(cycle.terms) != 3:
             _fail("SNAPSHOT_MISMATCH")
@@ -405,6 +413,7 @@ class SemanticCycleAccord(gl.Contract):
             _fail("SNAPSHOT_MISMATCH")
         # Resolve every record before changing any, including during cleanup.
         records = [self._intent(i) for i in ids]
+        self._preflight_finish_counter(status)
         # Fixed three-record loop; release only reservations owned by this cycle.
         for item in records:
             if item.status == "RESERVED" and item.cycle_id == cycle.cycle_id:
@@ -423,6 +432,7 @@ class SemanticCycleAccord(gl.Contract):
         if snapshot_id != cycle.snapshot_id:
             _fail("SNAPSHOT_MISMATCH")
         self._verify_snapshot(cycle)
+        self._preflight_finish_counter("ABORTED")
         self.declined[cycle.snapshot_id] = True
         self._finish(cycle, "ABORTED")
 

@@ -10,16 +10,28 @@
 - Tested implementation commit: `76f0b6ba8515132a6468ad5f9f67067fb932861d`.
 - Draft PR: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/1 — OPEN, DRAFT, NOT MERGED.
 - Publication identifiers are recorded in `evidence/phase1/publication.json`.
-  The Draft PR head includes a reporting-only follow-up with these real IDs;
-  it does not change the tested canonical contract or tests.
+  Publication metadata distinguishes the original baseline and the patched
+  implementation; the latest HEAD is available from the existing Draft PR.
 
 ## Current acceptance
 
 Phase 1 deterministic implementation and local verification are complete.
-**176 PASS / 0 FAIL / 0 SKIP**, storage serialization/reconstruction and calldata
+**229 PASS / 0 FAIL / 0 SKIP / applicable NOT RUN 0** after the limited
+Phase 1 hardening amendment (original 176 cases retained; 53 added), storage serialization/reconstruction and calldata
 checks included. Ruff and pinned GenVM lint/semantic/schema checks passed.
 There is no deployment, consensus result, contract address, transaction hash,
 wallet signature, frontend, Repository B, Portal entry, or merged PR.
+
+## Limited Phase 1 hardening amendment
+
+Starting HEAD: `f70005c0251dc1a6dfb0752a8037941e7c65065e`.
+Original canonical SHA256: `628742fbceec1e8e343dc35bd2f15b78b286e7953eaaf725b5597f139fff1306` (historical).
+Patched canonical SHA256: `8a44df900eb2e286e1a035db4e7496c8923b8c7e9389dbccaf40c98a68e7c48c`.
+Final confirmation, decline, RESERVED cancellation and expiration now reject
+predictable counter overflow before mutation. The verifier machine-checks the
+exact 12-method schema and strict write/view classifications. All 53 new cases
+are enumerated in local-results.json. No toolchain, schema or business rule change.
+No RPC requests, deployment, signing or Phase 2 work in this amendment.
 
 ## Canonical source and toolchain
 

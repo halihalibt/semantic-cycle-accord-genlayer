@@ -116,3 +116,74 @@ def test_invalid_update_expiration_atomic(h, expires):
     with pytest.raises(Exception, match="INVALID_VALIDITY|INVALID_INTEGER"):
         h.update(expires_at=expires)
     assert h.storage() == before
+
+
+MAX_U64 = (1 << 64) - 1
+
+
+def _counter_transition(h, operation):
+    h.reserve()
+    digest = h.c.get_cycle(1)["snapshot_id"]
+    if operation == "active":
+        h.confirm(owner=0)
+        h.confirm(owner=1)
+        return "active_count", lambda: h.confirm(owner=2), "ACTIVE"
+    if operation == "decline":
+        h.sender(1)
+        return "aborted_count", lambda: h.c.decline_cycle(1, digest), "ABORTED"
+    if operation == "cancel":
+        h.sender(1)
+        return "aborted_count", lambda: h.c.cancel_intent(2, 1), "ABORTED"
+    h.warp(h.c.get_cycle(1)["confirmation_deadline"])
+    h.sender(9)
+    return "expired_cycle_count", lambda: h.c.expire_cycle(1), "EXPIRED"
+
+
+@pytest.mark.parametrize("operation", ["active", "decline", "cancel", "expire"])
+def test_terminal_counter_overflow_leaves_all_storage_unchanged(h, operation):
+    counter, action, _ = _counter_transition(h, operation)
+    setattr(h.c, counter, MAX_U64)
+    digest = h.c.get_cycle(1)["snapshot_id"]
+    before = h.storage()
+    with pytest.raises(Exception, match="COUNTER_OVERFLOW"):
+        action()
+    assert h.storage() == before
+    cycle = h.c.get_cycle(1)
+    assert cycle["stored_status"] == "PENDING"
+    assert cycle["confirmations"] == ([True, True, False] if operation == "active" else [False] * 3)
+    assert not h.c.declined.get(digest, False)
+    for i in (1, 2, 3):
+        assert h.c.get_intent(i)["stored_status"] == "RESERVED"
+        assert h.c.get_intent(i)["cycle_id"] == 1
+    assert int(getattr(h.c, counter)) == MAX_U64
+
+
+@pytest.mark.parametrize("operation", ["active", "decline", "cancel", "expire"])
+def test_terminal_counter_last_increment_succeeds(h, operation):
+    counter, action, terminal = _counter_transition(h, operation)
+    setattr(h.c, counter, MAX_U64 - 1)
+    action()
+    assert int(getattr(h.c, counter)) == MAX_U64
+    cycle = h.c.get_cycle(1)
+    assert cycle["stored_status"] == terminal
+    assert cycle["confirmations"] == ([True] * 3 if operation == "active" else [False] * 3)
+    for i in (1, 2, 3):
+        expected = "CONSUMED" if operation == "active" else "OPEN"
+        if operation == "cancel" and i == 2:
+            expected = "CANCELLED"
+        assert h.c.get_intent(i)["stored_status"] == expected
+        assert h.c.get_intent(i)["cycle_id"] == (1 if operation == "active" else 0)
+    assert h.c.declined.get(cycle["snapshot_id"], False) is (operation == "decline")
+
+
+def test_nonfinal_and_duplicate_confirmations_preserved_at_counter_limit(h):
+    h.reserve()
+    h.c.active_count = MAX_U64
+    assert h.confirm(owner=0)
+    before = h.storage()
+    assert h.confirm(owner=0) is False
+    assert h.storage() == before
+    assert h.confirm(owner=1)
+    assert h.c.get_cycle(1)["confirmations"] == [True, True, False]
+    assert h.c.get_cycle(1)["stored_status"] == "PENDING"
+    assert int(h.c.active_count) == MAX_U64

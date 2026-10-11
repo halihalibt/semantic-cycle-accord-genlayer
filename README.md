@@ -57,7 +57,8 @@ it does not connect to a blockchain. The verification script disables pytest
 plugin autoload, pins the linter to v0.2.16, and executes only offline tests.
 Tests also block socket connections. Pre-cache the SDK before running tests.
 
-Final Phase 1 result: **176 tests passed, 0 failed, 0 skipped**. SDK storage
+Phase 1 after the limited security hardening amendment: **229 tests passed, 0 failed, 0 skipped**
+(original checkpoint: 176 passed). SDK storage
 serialization/reconstruction and calldata compatibility are included. GenVM
 AST lint and SDK semantic validation passed; schema export contains exactly
 six writes and six views. See [test acceptance](docs/TEST_AND_ACCEPTANCE.md).

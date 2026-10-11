@@ -1,6 +1,7 @@
 # Phase 1 Test and Acceptance Record
 
-Final locked-environment execution: **176 PASS / 0 FAIL / 0 SKIP**.
+Post-hardening locked-environment execution: **229 PASS / 0 FAIL / 0 SKIP**.
+The original 176 passing cases remain intact; 53 new cases are executed.
 No applicable deterministic test is NOT RUN. Real deployment, network-backed
 integration, semantic consensus, frontend and transaction tests are NOT RUN
 because they are outside Phase 1. No assessment or onchain success is inferred.
@@ -50,7 +51,7 @@ Invariant mapping is in `DETERMINISTIC_INVARIANTS.md`.
 | SDK semantic validation | PASS; canonical class, 12 methods, zero constructor parameters |
 | SDK schema export | PASS; exactly 6 writes and 6 views; no private seam exposed |
 | Ruff source lint | PASS; all checks passed |
-| Ruff format | PASS; all 10 Python files formatted |
+| Ruff format | PASS; all 11 Python files formatted |
 | Locked dependency reproduction | PASS; `uv sync --frozen` environment ran the complete suite |
 | Storage/cloudpickle and fresh-root byte restoration | PASS; included in executed tests |
 | Stable eth_chainId metadata | PASS; 61999; read-only environment check |
@@ -78,3 +79,25 @@ private accepted-result seam to test deterministic consequences. This proves
 neither natural-language compatibility nor Validator agreement. The phase
 is a tested deterministic checkpoint suitable for separate Phase 2 review,
 not a deployed or production-ready application.
+
+## Limited Phase 1 hardening amendment
+
+No public signature, persistent schema or protocol version changed. Four
+parameterized overflow cases cover final activation, decline, RESERVED-owner
+cancellation and permissionless expiration. Each compares the complete
+normalized serialized storage without rollback, and explicitly checks flags,
+PENDING status, all reservations and absent declined marker. Four corresponding
+MAX_U64 - 1 cases reach MAX_U64 with consistent terminal states. One additional
+case preserves non-final and duplicate confirmations at the active-counter limit.
+
+The 44 schema cases comprise one approved-surface success, 12 missing-method
+rejections, four unexpected-method rejections (including private reservation,
+assess_cycle and artificial verdict), 12 reversed readonly classifications,
+four nonboolean flags, seven malformed/unsuccessful outputs, one subprocess
+failure, and three zero-exit invalid-schema failures through verification main.
+All original 176 cases remain passing; applicable NOT RUN remains zero.
+
+The one-command verifier now runs the pinned schema command, requires success
+and valid JSON, enforces the exact 12 names and six strict boolean readonly flags
+per category, and propagates failures as a nonzero result. Per-case names, actual
+results and the preserved original record are in local-results.json.

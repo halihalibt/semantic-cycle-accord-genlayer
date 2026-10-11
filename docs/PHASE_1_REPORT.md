@@ -1,6 +1,38 @@
 # SCA-3 V1 — Phase 1 Acceptance Report
 
-## Result
+## Current limited hardening amendment
+
+The three authorized corrections are complete: pre-mutation ACTIVE counter
+validation; centralized ABORTED/EXPIRED counter preflight including the decline
+marker ordering; and machine-checked schema validation in verify_local.py.
+The canonical source changed only by ten added lines. No protocol version,
+storage schema, signatures, ring rules, snapshot identity or AI logic changed.
+
+Starting branch HEAD: `f70005c0251dc1a6dfb0752a8037941e7c65065e`.
+Patched implementation commit is recorded in evidence/phase1/publication.json;
+the latest reporting HEAD is the existing Draft PR's head_sha.
+Original canonical SHA256: `628742fbceec1e8e343dc35bd2f15b78b286e7953eaaf725b5597f139fff1306`.
+Current canonical SHA256: `8a44df900eb2e286e1a035db4e7496c8923b8c7e9389dbccaf40c98a68e7c48c`.
+
+Full regression: **229 PASS / 0 FAIL / 0 SKIP / applicable NOT RUN 0**.
+All 176 original cases retained; 53 new cases (9 counter cases, 44 schema cases).
+GenVM v0.2.16 lint: 3 PASS, zero warnings; SDK semantic validation: 12 methods.
+Schema: PASS, exactly 6 writes and 6 views, no private or AI entry point.
+Ruff lint and format: PASS, 11 Python files. Locked dependencies unchanged.
+
+Evidence: local-results.json preserves the original 176-test record, names all
+new cases and records the actual current digest/results. genvm-check.json and
+schema.json are regenerated from the pinned toolchain; hardening-verification.txt
+records the observed complete verification result. No RPC request was sent in
+this amendment. The prior metadata check below is historical.
+
+No remaining patch blocker. Ready for independent Phase 1 review and merge
+approval; PR remains Draft and unmerged. Full WASM, deployment and consensus
+remain outside this patch and unverified. No Phase 2 work is authorized.
+
+The original implementation report follows for historical provenance.
+
+## Original implementation result
 
 Deterministic Phase 1 implementation is complete and locally verified. The
 checkpoint is for review on `phase1-deterministic-core`; main is not merged.
@@ -14,7 +46,7 @@ Repository: https://github.com/halihalibt/semantic-cycle-accord-genlayer
 Owner: halihalibt. Visibility: Public. License: MIT, original attribution retained.
 Initial main HEAD: `98784894a470c31ca1ebe2e075092582bb88403e`.
 
-## Verification
+## Original implementation verification
 
 | Check | Actual result |
 | --- | --- |

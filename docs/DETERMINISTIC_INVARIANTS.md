@@ -27,3 +27,15 @@ Storage comparisons use actual serialized SDK storage bytes. The in-memory
 manager may allocate zero-filled buffers on reads; tests normalize these read
 allocations so they do not mistake a read for a protocol write. No failure test
 uses rollback to conceal partially modified state.
+
+## Phase 1 hardening amendment — INV-16
+
+Final confirmation checks active_count before changing its flag or consuming
+Intents. A private counter preflight runs before _finish releases reservations
+and before decline writes its replay marker. Cancellation and expiration inherit
+the _finish preflight. At MAX_U64 these four public paths reject with
+COUNTER_OVERFLOW and preserve serialized storage. At MAX_U64 - 1 all four
+transitions succeed; non-final/duplicate confirmations retain their semantics.
+Executed cases: test_terminal_counter_overflow_leaves_all_storage_unchanged,
+test_terminal_counter_last_increment_succeeds and
+test_nonfinal_and_duplicate_confirmations_preserved_at_counter_limit.
