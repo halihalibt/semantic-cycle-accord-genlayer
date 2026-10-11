@@ -1,0 +1,221 @@
+{
+  "ok": true,
+  "schema": {
+    "ctor": {
+      "params": [],
+      "kwparams": {}
+    },
+    "methods": {
+      "cancel_intent": {
+        "params": [
+          [
+            "intent_id",
+            "int"
+          ],
+          [
+            "expected_version",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      },
+      "confirm_cycle": {
+        "params": [
+          [
+            "cycle_id",
+            "int"
+          ],
+          [
+            "snapshot_id",
+            "string"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "bool",
+        "payable": false
+      },
+      "create_intent": {
+        "params": [
+          [
+            "offer_description",
+            "string"
+          ],
+          [
+            "offer_limitations",
+            "string"
+          ],
+          [
+            "need_description",
+            "string"
+          ],
+          [
+            "need_requirements",
+            "string"
+          ],
+          [
+            "expires_at",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "int",
+        "payable": false
+      },
+      "decline_cycle": {
+        "params": [
+          [
+            "cycle_id",
+            "int"
+          ],
+          [
+            "snapshot_id",
+            "string"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      },
+      "expire_cycle": {
+        "params": [
+          [
+            "cycle_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "bool",
+        "payable": false
+      },
+      "get_cycle": {
+        "params": [
+          [
+            "cycle_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_cycles_page": {
+        "params": [
+          [
+            "offset",
+            "int"
+          ],
+          [
+            "limit",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_intent": {
+        "params": [
+          [
+            "intent_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_intents_page": {
+        "params": [
+          [
+            "offset",
+            "int"
+          ],
+          [
+            "limit",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_owner_records": {
+        "params": [
+          [
+            "owner",
+            "string"
+          ],
+          [
+            "offset",
+            "int"
+          ],
+          [
+            "limit",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_protocol_stats": {
+        "params": [
+          [
+            "offset",
+            "int"
+          ],
+          [
+            "limit",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "update_intent": {
+        "params": [
+          [
+            "intent_id",
+            "int"
+          ],
+          [
+            "expected_version",
+            "int"
+          ],
+          [
+            "offer_description",
+            "string"
+          ],
+          [
+            "offer_limitations",
+            "string"
+          ],
+          [
+            "need_description",
+            "string"
+          ],
+          [
+            "need_requirements",
+            "string"
+          ],
+          [
+            "expires_at",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "int",
+        "payable": false
+      }
+    }
+  }
+}
