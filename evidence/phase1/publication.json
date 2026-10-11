@@ -5,9 +5,9 @@
   "branch": "phase1-deterministic-core",
   "base": "main",
   "unchanged_main_head": "98784894a470c31ca1ebe2e075092582bb88403e",
-  "tested_implementation_commit": "76f0b6ba8515132a6468ad5f9f67067fb932861d",
-  "implementation_tree": "56e7db555a29d5ffbf3af872666235b75e5c8dd6",
-  "canonical_sha256": "628742fbceec1e8e343dc35bd2f15b78b286e7953eaaf725b5597f139fff1306",
+  "tested_implementation_commit": "110adcc769d2dfb7f40d0d693f3d1ffe6cee160b",
+  "implementation_tree": "b6928b14cccbb30ec9f9b40fe6a3e9d0c082aa04",
+  "canonical_sha256": "8a44df900eb2e286e1a035db4e7496c8923b8c7e9389dbccaf40c98a68e7c48c",
   "draft_pr_number": 1,
   "draft_pr_url": "https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/1",
   "pr_observed_status": {
@@ -15,6 +15,28 @@
     "draft": true,
     "merged": false
   },
-  "latest_head_location": "Draft PR head_sha; subsequent reporting-only commit contains this file",
-  "scope_stop": "PHASE 1 ONLY"
+  "latest_head_location": "Existing Draft PR head_sha; final reporting-only commit contains this record",
+  "scope_stop": "PHASE 1 ONLY",
+  "original_publication_record": {
+    "repository": "https://github.com/halihalibt/semantic-cycle-accord-genlayer",
+    "owner": "halihalibt",
+    "visibility": "public",
+    "branch": "phase1-deterministic-core",
+    "base": "main",
+    "unchanged_main_head": "98784894a470c31ca1ebe2e075092582bb88403e",
+    "tested_implementation_commit": "76f0b6ba8515132a6468ad5f9f67067fb932861d",
+    "implementation_tree": "56e7db555a29d5ffbf3af872666235b75e5c8dd6",
+    "canonical_sha256": "628742fbceec1e8e343dc35bd2f15b78b286e7953eaaf725b5597f139fff1306",
+    "draft_pr_number": 1,
+    "draft_pr_url": "https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/1",
+    "pr_observed_status": {
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    "latest_head_location": "Draft PR head_sha; subsequent reporting-only commit contains this file",
+    "scope_stop": "PHASE 1 ONLY"
+  },
+  "patch_starting_head": "f70005c0251dc1a6dfb0752a8037941e7c65065e",
+  "amendment": "Limited Phase 1 hardening; 229 PASS, 0 FAIL, 0 SKIP, applicable NOT RUN 0"
 }
