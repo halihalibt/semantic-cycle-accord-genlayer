@@ -1,7 +1,15 @@
 # SCA-3 V1 — Phase 2 Report
 
-Local implementation/validation is complete. GitHub Draft publication identifiers
-will be added after the verified implementation commit is published.
+**PHASE 2 IMPLEMENTED — LOCAL VALIDATION COMPLETE — AWAITING INDEPENDENT REVIEW**
+
+Draft PR: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/2 — OPEN, DRAFT, NOT MERGED.
+Published tested implementation HEAD: `91d6720e2ccd0b267d607a2005ce32e8de4c9d70`.
+Implementation tree: `92722dc4ea4141c5812db4fd1fba51c677990a25`.
+The connector-created tree exactly equals the locally verified git tree.
+A reporting-only follow-up adds these identifiers without changing source/tests.
+The final branch HEAD is that reporting commit, verified from the PR/branch API
+and recorded in the final execution response. This document does not invent a
+self-referential commit hash. See evidence/phase2/publication.json.
 
 | Identity / check | Actual value |
 | --- | --- |
@@ -105,4 +113,4 @@ Phase 1 byte-layout test. Per-file counts and every node ID are in local-results
 
 No deployment, blockchain transaction, wallet signing/credential access, paid
 external AI, alternate network, Repository B, frontend, PR merge or Portal work
-occurred. Phase 2 publication is the sole remaining step; execution then STOPs.
+occurred. Phase 2 Draft publication is complete. Execution STOPs pending independent review.

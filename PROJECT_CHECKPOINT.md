@@ -5,8 +5,14 @@ Account: halihalibt; PUBLIC; MIT retained. Sole target: Stable Studionet 61999,
 https://studio.genlayer.com/api. Original Phase 1 PR #1 is merged at authoritative
 main baseline cc773e936cf6184d0b3f9447771ac804e597bfe7.
 
-Work branch: phase2-consensus-core. Main is not modified. Draft PR publication
-identifiers are added after the verified implementation commit is published.
+Work branch: phase2-consensus-core. Main is not modified.
+Draft PR: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/2 — OPEN, DRAFT, NOT MERGED.
+Published tested implementation HEAD: 91d6720e2ccd0b267d607a2005ce32e8de4c9d70.
+Implementation tree: 92722dc4ea4141c5812db4fd1fba51c677990a25.
+The final branch HEAD additionally contains this reporting-only follow-up;
+resolve it from the Draft PR's head_sha/branch API. Source/tests are unchanged.
+Publication provenance is in evidence/phase2/publication.json.
+Status: PHASE 2 IMPLEMENTED — LOCAL VALIDATION COMPLETE — AWAITING INDEPENDENT REVIEW.
 Canonical path: contracts/semantic_cycle_accord.py.
 SHA256: 88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442
 Prompt: SCA3-CANONICAL-CLASSIFICATION-V1
