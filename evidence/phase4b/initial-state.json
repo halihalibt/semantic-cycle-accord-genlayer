@@ -1,0 +1,30 @@
+{
+  "method": "get_protocol_stats",
+  "args": [
+    0,
+    50
+  ],
+  "state_variant": "latest-final",
+  "decoded_result": {
+    "aborted_total": 0,
+    "active_total": 0,
+    "assessment_total": 0,
+    "cycle_total": 0,
+    "effective_intent_counts_page": {
+      "CANCELLED": 0,
+      "CONSUMED": 0,
+      "EXPIRED": 0,
+      "OPEN": 0,
+      "RESERVED": 0
+    },
+    "expired_cycles_cleaned": 0,
+    "has_more": false,
+    "intent_total": 0,
+    "network_id": 61999,
+    "next_offset": 0,
+    "offset": 0,
+    "protocol": "SCA-3-V1",
+    "semantic_matching_available": true
+  },
+  "decoder": "frozen-lock genlayer-py 0.16.3 calldata; no client or signing account instantiated"
+}

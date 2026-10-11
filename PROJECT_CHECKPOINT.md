@@ -1,17 +1,45 @@
-# SCA-3 V1 — Phase 4A checkpoint
+# SCA-3 V1 — Phase 4B checkpoint
 
-**PHASE 4A COMPLETE — MANUAL DEPLOYMENT PACKAGE READY — AWAITING USER APPROVAL**
+**REAL DEPLOYMENT VERIFIED — EMPTY INITIAL STATE VERIFIED — DRAFT REVIEW — STOP**
 
-Public Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer, owner halihalibt, MIT. Starting and unchanged main `7906f4e3c7c619ffdef0ae12147a78f5d018cebb`. PR #1/#2/#3 VERIFIED MERGED. Work branch phase4a-deployment-preflight; Draft PR #4: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/4 — VERIFIED OPEN, DRAFT, NOT MERGED. Actual publication identifiers: evidence/phase4a/publication.json and current GitHub branch/PR (final HEAD resolves there).
+Public Repository A: halihalibt/semantic-cycle-accord-genlayer, MIT.
+Phase 4A merged main baseline verified: `61f2149996be02a0da4646082a66f3f03a3cb33c`.
+Work branch: `phase4b-real-deployment-evidence`. Actual publication commit and Draft
+PR resolve from evidence/phase4b/publication.json and GitHub; no merge authorized.
 
-Canonical source contracts/semantic_cycle_accord.py SHA256 `88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442`; trusted CANONICAL_PROMPT SHA256 `8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3`. Entire source, prompt/specifications, tests, historical evidence, toolchain and uv.lock unchanged.
+Stable Studionet 61999. User-deployed contract:
+`0x84e9284448D4cd16dcBBCbd8104449B11209C6F0`.
+Deployment transaction:
+`0x3bf2036d9683c6ab55b09cacf54bdeb8ecfa7cb8e7864b832ae7041067f196cc`.
+Deployer: `0x22Acaa233b7b985b36ef168F2DE9295334065B15`.
+Canonical contracts/semantic_cycle_accord.py SHA256:
+`88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442`.
+Transaction source independently decoded and verified byte-for-byte against main.
+Prompt constant hash remains `8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3`.
 
-Reproduced 566 PASS / 0 FAIL / 0 SKIP; GenVM 3 AST checks, SDK semantic validation, 7 WRITE + 7 VIEW schema, Ruff, storage/calldata/Phase 1 bytes PASS. Four actual isolated native v0.2.16 WASM smoke calls PASS, disposable host only. Python 3.12.14 and frozen pins retained.
+Live RPC verifies FINALIZED, successful receipt, Leader SUCCESS and one Accepted
+round. Raw votes map: 3 agree including Leader, 2 idle; actual receipts: 1 Leader
+and 4 Validators. Idle Validators were cancelled after quorum, not five agrees.
+User Explorer screenshot records Initial Validators 5 / Rotation Count 0.
+Independent latest-final get_protocol_stats(0,50) matches all zero counters,
+SCA-3-V1, network 61999 and semantic_matching_available true. The latter does not
+prove live AI matching. Full requests/responses and screenshot originals archived.
 
-Actual read-only RPC confirms 61999/0xf22f; Studio and Explorer HTTP 200. gen_getTransactionStatus/eth receipt/by-hash dispatchers exist but real query shapes/results remain LIMITED until a real project hash exists. gen_getTransactionReceipt/gen_simulate unavailable. eth_gasPrice=0 is outer-layer only. Fees and user balance UNKNOWN; no simulation or contract execution occurred. Manual constructor args NONE. Exact deploy/fee/signature UI requires manual confirmation.
+Read docs/PHASE_4B_REPORT.md, docs/DEPLOYMENT_MANIFEST_STUDIONET.md,
+docs/ONCHAIN_EVIDENCE_INDEX.md and evidence/phase4b/ before continuing. Phase 4A,
+README and master-plan statements are historical pre-deployment checkpoints;
+this checkpoint supplies the current deployment status without rewriting history.
 
-Read docs/PHASE_4A_REPORT.md and all five other Phase 4A/preflight/manual/vector/acceptance/recovery documents, canonical source, original protocol/prompt/equivalence and evidence/phase4a/. Reproduce original three uv commands; retain git history. Fresh 4B handoff is in PHASE_4A_REPORT.md.
+Source, Canonical Prompt, protocol rules, tests, toolchain, uv.lock and historical
+evidence unchanged. Evidence assertions and scope/checksum/link checks PASS;
+regression suite NOT RUN in this evidence-only phase (prior 566 PASS historical).
+Fees, wallet signature transcript, verified Explorer detail URL and full Studio
+schema-error stderr not acquired. Explorer currently returned an application
+error in this browser; RPC independent verification succeeded.
 
-Prepared positive A→C→B→A and fresh negative PNG-only/SVG-required vectors. IDs/versions/expiry/cycle/snapshot must be taken from actual future execution and reads. No real deployment address, hash, Validator agreement or finality exists. Real model behavior, hosted exact-runner execution and unexpected mid-write node rollback remain unverified; successful native smoke proves none of these.
+Three-wallet E2E, real AI classification, positive/negative matching,
+reservations/confirmations/ACTIVE and unexpected mid-write real-node rollback
+remain unverified. ACTIVE is commitment, never service delivery.
 
-STOP. Await user independent review and separate next-stage authorization. Do not merge, deploy, sign, submit transactions, create/import a signing wallet, access secrets, request faucet, upgrade tooling, switch network, build Repository B/frontend, enter Portal or proceed to 4B/4C. ACTIVE is commitment, never delivery.
+STOP for ordinary-chat independent review. No writes, redeployment, signing,
+Intent creation, matching, Phase 4C, Repository B, frontend, PR merge or Portal.

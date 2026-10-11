@@ -1,0 +1,26 @@
+{
+  "provenance": "User-supplied screenshots, visually inspected; original bytes copied without editing",
+  "files": [
+    {
+      "original": "download(1).png",
+      "path": "screenshots/protocol-stats.png",
+      "sha256": "d0e685d06f6bc197bd6b0db5d7ec542002c6b973384bd8e8d5ea15c47f262d2d"
+    },
+    {
+      "original": "download(2).png",
+      "path": "screenshots/explorer-overview.png",
+      "sha256": "4cd638837425fc02a8c160b4fc5c217f93a3d80897a86b1d1690d8edc8813a7d"
+    },
+    {
+      "original": "download(3).png",
+      "path": "screenshots/explorer-execution.png",
+      "sha256": "e60f57db8fec718336f6f3399484338443adeb0747a5c7794f500fe2977189b1"
+    },
+    {
+      "original": "download(4).png",
+      "path": "screenshots/studio-deployed.png",
+      "sha256": "9c38ed34d53fd318347301368f18f6ee9589c96e588e4ecdc49c2951c85f5f1d"
+    }
+  ],
+  "studio_warning": "Screenshot contains gen_getContractSchemaForCode errors. Full stderr not visible/not acquired. Deployment and stats independently verified despite this UI schema warning."
+}
