@@ -1,56 +1,17 @@
-# SCA-3 V1 — Phase 3 Continuation Checkpoint
+# SCA-3 V1 — Phase 4A checkpoint
 
-**PHASE 3 LOCAL SECURITY CLOSURE COMPLETE — AWAITING INDEPENDENT REVIEW**
+**PHASE 4A COMPLETE — MANUAL DEPLOYMENT PACKAGE READY — AWAITING USER APPROVAL**
 
-Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer
-Account/owner: halihalibt; PUBLIC; MIT. Stable Studionet 61999 only.
-Authoritative starting/current main: `87fb4c080f6a9c9518e7eb345af0991a24003c47`.
-PR #1/#2 verified MERGED. Branch: `phase3-security-closure`.
-Draft PR must remain OPEN, DRAFT, unmerged. Published IDs and verified main are
-in evidence/phase3/publication.json; final HEAD resolves from GitHub branch/PR.
+Public Repository A: https://github.com/halihalibt/semantic-cycle-accord-genlayer, owner halihalibt, MIT. Starting and unchanged main `7906f4e3c7c619ffdef0ae12147a78f5d018cebb`. PR #1/#2/#3 VERIFIED MERGED. Work branch phase4a-deployment-preflight; Draft PR #4: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/4 — VERIFIED OPEN, DRAFT, NOT MERGED. Actual publication identifiers: evidence/phase4a/publication.json and current GitHub branch/PR (final HEAD resolves there).
 
-## Canonical identity and verified outcome
+Canonical source contracts/semantic_cycle_accord.py SHA256 `88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442`; trusted CANONICAL_PROMPT SHA256 `8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3`. Entire source, prompt/specifications, tests, historical evidence, toolchain and uv.lock unchanged.
 
-- Source: contracts/semantic_cycle_accord.py — UNCHANGED.
-- Source SHA256: 88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442
-- Prompt: SCA3-CANONICAL-CLASSIFICATION-V1 — UNCHANGED.
-- Prompt SHA256: 8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3
-- Original baseline: actually reproduced 505 PASS / 0 FAIL / 0 SKIP.
-- Final suite: 566 PASS / 0 FAIL / 0 SKIP / applicable NOT RUN 0; 61 new targeted cases.
-- Schema: exact 7 WRITE / 7 VIEW, no supplied verdict/public reservation seam.
-- GenVM 3 AST checks, SDK semantic validation, Ruff, storage/calldata and actual
-  Phase 1 byte-layout reconstruction PASS; original source/tests/pins retained.
-- Genuine isolated v0.2.16 WASM constructor/read/create/read: 4 PASS, disposable
-  local state, native Return/exit 0. No real deployment, consensus or finality.
+Reproduced 566 PASS / 0 FAIL / 0 SKIP; GenVM 3 AST checks, SDK semantic validation, 7 WRITE + 7 VIEW schema, Ruff, storage/calldata/Phase 1 bytes PASS. Four actual isolated native v0.2.16 WASM smoke calls PASS, disposable host only. Python 3.12.14 and frozen pins retained.
 
-No production vulnerability was confirmed; no source repair applied. The 27 new
-byte-write faults cover 9 transitions. Direct Mode partial writes are observed
-before manual restoration. Actual node rollback remains NOT TESTED; no fake
-production compensation added. History capacity/growth, version-based retries,
-real semantic accuracy and injection risk remain explicit design/testing limits.
-No frozen business semantics, schema, API, equivalence or prompt were changed.
+Actual read-only RPC confirms 61999/0xf22f; Studio and Explorer HTTP 200. gen_getTransactionStatus/eth receipt/by-hash dispatchers exist but real query shapes/results remain LIMITED until a real project hash exists. gen_getTransactionReceipt/gen_simulate unavailable. eth_gasPrice=0 is outer-layer only. Fees and user balance UNKNOWN; no simulation or contract execution occurred. Manual constructor args NONE. Exact deploy/fee/signature UI requires manual confirmation.
 
-## Reproduction and authoritative reads
+Read docs/PHASE_4A_REPORT.md and all five other Phase 4A/preflight/manual/vector/acceptance/recovery documents, canonical source, original protocol/prompt/equivalence and evidence/phase4a/. Reproduce original three uv commands; retain git history. Fresh 4B handoff is in PHASE_4A_REPORT.md.
 
-Read README.md, WORK_MASTER_PLAN.md, docs/PHASE_3_SECURITY_AUDIT.md,
-docs/PHASE_3_THREAT_MODEL.md, docs/PHASE_3_TEST_AND_ACCEPTANCE.md,
-docs/PHASE_3_REPORT.md, current canonical source/all tests and evidence/phase3/.
-Original protocol/state/invariant/prompt/equivalence specs remain authoritative.
-Original Phase 1/2 evidence is preserved, with old PR statuses treated historically.
+Prepared positive A→C→B→A and fresh negative PNG-only/SVG-required vectors. IDs/versions/expiry/cycle/snapshot must be taken from actual future execution and reads. No real deployment address, hash, Validator agreement or finality exists. Real model behavior, hosted exact-runner execution and unexpected mid-write node rollback remain unverified; successful native smoke proves none of these.
 
-Run uv sync --frozen, uv run python scripts/bootstrap_sdk.py,
-uv run python scripts/verify_local.py; optionally reproduce resource/native probes
-using the exact instructions in Phase 3 acceptance. Retain local git history.
-Python 3.12.14, GenVM v0.2.16, genlayer-test 0.29.2, genvm-linter 0.11.0,
-pytest 9.1.1, Ruff 0.14.0 and original uv.lock remain fixed.
-
-## Stop and future readiness
-
-Local closure supports independent review and consideration of a future separately
-authorized deployment-preflight. Actual node rollback, production consensus WASM,
-real model behavior/consensus/finality and live races are NOT RUN. ACTIVE still means
-commitment, never delivery. No onchain success claim is permitted from these tests.
-
-STOP after verified Draft publication. Do not merge, start a later phase, deploy,
-transact, sign, access wallet secrets, create Repository B/frontend, switch network,
-upgrade toolchain, use paid/external AI or enter Portal without new authorization.
+STOP. Await user independent review and separate next-stage authorization. Do not merge, deploy, sign, submit transactions, create/import a signing wallet, access secrets, request faucet, upgrade tooling, switch network, build Repository B/frontend, enter Portal or proceed to 4B/4C. ACTIVE is commitment, never delivery.

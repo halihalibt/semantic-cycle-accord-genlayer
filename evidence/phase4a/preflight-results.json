@@ -1,0 +1,135 @@
+{
+  "phase": "PHASE 4A",
+  "status": "PHASE 4A COMPLETE \u2014 MANUAL DEPLOYMENT PACKAGE READY \u2014 AWAITING USER APPROVAL",
+  "timestamp_utc": "2026-10-11T15:21:25.216386+00:00",
+  "repository": "halihalibt/semantic-cycle-accord-genlayer",
+  "visibility": "public",
+  "owner": "halihalibt",
+  "license": "MIT",
+  "starting_main_sha": "7906f4e3c7c619ffdef0ae12147a78f5d018cebb",
+  "work_branch": "phase4a-deployment-preflight",
+  "merged_prs": {
+    "1": "cc773e936cf6184d0b3f9447771ac804e597bfe7",
+    "2": "87fb4c080f6a9c9518e7eb345af0991a24003c47",
+    "3": "7906f4e3c7c619ffdef0ae12147a78f5d018cebb"
+  },
+  "identity": {
+    "contract_file_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+    "trusted_prompt_constant_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+    "trusted_prompt_identity": "UTF-8 CANONICAL_PROMPT constant without trailing newline; NOT whole markdown file",
+    "prompt_document_file_sha256": "0fa05351158c059592afa2dbb8deefd80bf1367709a3a46b8825eb6554a87197",
+    "uv_lock_sha256": "6fa79f33e50bf62c62ee2fc819bc2bc84565eb9b558dd68d8c9a5a15b77de905"
+  },
+  "toolchain": {
+    "python": "3.12.14",
+    "genvm": "v0.2.16",
+    "genlayer_test": "0.29.2",
+    "genvm_linter": "0.11.0",
+    "pytest": "9.1.1",
+    "ruff": "0.14.0",
+    "uv_lock_unchanged": true
+  },
+  "commands": [
+    {
+      "command": "uv sync --frozen",
+      "exit_code": 0
+    },
+    {
+      "command": "uv run python scripts/bootstrap_sdk.py",
+      "exit_code": 0
+    },
+    {
+      "command": "uv run python scripts/verify_local.py",
+      "exit_code": 0
+    }
+  ],
+  "pytest": {
+    "pass": 566,
+    "fail": 0,
+    "skip": 0,
+    "observed_seconds": 16.11,
+    "original_tests_unchanged": true
+  },
+  "checks": {
+    "genvm_ast_lint": "PASS: 3",
+    "sdk_semantic_validation": "PASS: 14 methods, no constructor arguments",
+    "schema": "PASS: 7 WRITE + 7 VIEW",
+    "ruff_lint": "PASS",
+    "ruff_format": "PASS: 20 files",
+    "storage_calldata_and_phase1_bytes": "PASS in unchanged suite",
+    "source_prompt_unchanged": true
+  },
+  "offline_wasm": {
+    "count": 4,
+    "result": "PASS: four native Return / exit 0",
+    "level": "isolated official v0.2.16, disposable local host; NOT blockchain or consensus",
+    "automatic_node_rollback": "NOT TESTED"
+  },
+  "exact_signature_verification": {
+    "__init__": [],
+    "create_intent": [
+      "offer_description",
+      "offer_limitations",
+      "need_description",
+      "need_requirements",
+      "expires_at"
+    ],
+    "assess_cycle": [
+      "intent_ids",
+      "versions",
+      "edges"
+    ],
+    "confirm_cycle": [
+      "cycle_id",
+      "snapshot_id"
+    ],
+    "get_protocol_stats": [
+      "offset",
+      "limit"
+    ]
+  },
+  "network": {
+    "chain_id": 61999,
+    "identity": "VERIFIED",
+    "rpc": "https://studio.genlayer.com/api",
+    "studio_and_explorer_http": "200",
+    "gen_getTransactionStatus": "LIMITED: missing transaction_hash, dispatcher exists",
+    "gen_getTransactionReceipt": "UNSUPPORTED -32601",
+    "eth_getTransactionByHash_and_receipt": "LIMITED: missing transaction_hash, dispatcher exists",
+    "eth_gasPrice": "0x0; not a protocol fee estimate",
+    "eth_estimateGas": "LIMITED: missing transaction parameter",
+    "gen_simulate": "UNSUPPORTED -32601"
+  },
+  "fees": {
+    "deployment": "UNKNOWN",
+    "create_intent": "UNKNOWN",
+    "assess_cycle": "UNKNOWN",
+    "confirm_cycle": "UNKNOWN",
+    "decline_cycle": "UNKNOWN",
+    "expire_cycle": "UNKNOWN",
+    "budget": "UNKNOWN",
+    "consumption": "NOT OBSERVED",
+    "user_balance": "NOT CHECKED",
+    "cash_cost": "No paid API/purchase used; intended free Stable test workflow, no guarantee of unknown future fee"
+  },
+  "remaining_limits": [
+    "Runtime availability of exact runner on hosted node not established by read-only RPC",
+    "Current deploy/fee/signature UI requires manual confirmation",
+    "Real transaction receipt/status shape not verified without a real project hash",
+    "Real model classification/Validator consensus/finality NOT RUN",
+    "Unexpected mid-write real-node rollback UNVERIFIED"
+  ],
+  "scope": {
+    "deployments": 0,
+    "submitted_transactions": 0,
+    "network_contract_execution": 0,
+    "signatures": 0,
+    "wallet_secrets_accessed": false,
+    "signing_wallet_created_or_imported": false,
+    "paid_apis": 0,
+    "main_modified": false,
+    "merge": false,
+    "repository_b_or_frontend": false,
+    "portal": false
+  }
+}
