@@ -1,0 +1,86 @@
+{
+  "phase": "4B",
+  "status": "FINALIZED",
+  "baseline": "61f2149996be02a0da4646082a66f3f03a3cb33c",
+  "network": {
+    "name": "Stable Studionet",
+    "chain_id": 61999,
+    "rpc": "https://studio.genlayer.com/api"
+  },
+  "transaction_hash": "0x3bf2036d9683c6ab55b09cacf54bdeb8ecfa7cb8e7864b832ae7041067f196cc",
+  "contract_address": "0x84e9284448D4cd16dcBBCbd8104449B11209C6F0",
+  "deployer": "0x22Acaa233b7b985b36ef168F2DE9295334065B15",
+  "source_path": "contracts/semantic_cycle_accord.py",
+  "source_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "source_bytes": 32040,
+  "source_byte_identical": true,
+  "prompt_constant_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+  "constructor_calldata_base64": "Bg==",
+  "constructor_decoded": {},
+  "receipt_status": "0x1",
+  "leader_execution_result": "SUCCESS",
+  "leader_result_base64": "AAA=",
+  "leader_result_bytes_hex": "0000",
+  "consensus_rounds": [
+    "Accepted"
+  ],
+  "votes": {
+    "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "agree",
+    "0x90402341F0B0e97b23023c0a87de957FB7148E0F": "idle",
+    "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "agree",
+    "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "agree",
+    "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658": "idle"
+  },
+  "vote_counts": {
+    "agree": 3,
+    "idle": 2
+  },
+  "leader_count": 2,
+  "validator_receipt_count": 4,
+  "validators": [
+    {
+      "address": "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658",
+      "vote": "idle",
+      "execution_result": "ERROR",
+      "stderr": "Validator execution cancelled after quorum",
+      "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED",
+      "contract_state_hash": null
+    },
+    {
+      "address": "0x90402341F0B0e97b23023c0a87de957FB7148E0F",
+      "vote": "idle",
+      "execution_result": "ERROR",
+      "stderr": "Validator execution cancelled after quorum",
+      "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED",
+      "contract_state_hash": null
+    },
+    {
+      "address": "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+      "vote": "agree",
+      "execution_result": "SUCCESS",
+      "stderr": "",
+      "error_code": null,
+      "contract_state_hash": "6aff67d974722671ccc1e68baa99e873fd51041f3e5d5ab2c4978f316799b73d"
+    },
+    {
+      "address": "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47",
+      "vote": "agree",
+      "execution_result": "SUCCESS",
+      "stderr": "",
+      "error_code": null,
+      "contract_state_hash": "6aff67d974722671ccc1e68baa99e873fd51041f3e5d5ab2c4978f316799b73d"
+    }
+  ],
+  "rotation_count": {
+    "value": 0,
+    "provenance": "user Explorer overview screenshot; raw history contains one Accepted round"
+  },
+  "fees": {
+    "estimate": null,
+    "budget": null,
+    "consumed_gen": null,
+    "note": "Compatibility gas fields retained verbatim in rpc-queries.json; no GEN fee inference"
+  },
+  "explorer_detail_url": null,
+  "initial_state_verified": true
+}

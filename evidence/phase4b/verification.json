@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "baseline_match": "PASS",
+    "canonical_source_byte_identity": "PASS",
+    "prompt_constant_sha256": "PASS",
+    "chain_id": "PASS",
+    "status_FINALIZED": "PASS",
+    "receipt_status_0x1": "PASS",
+    "deployer_and_address": "PASS",
+    "leader_execution_SUCCESS": "PASS",
+    "initial_state": "PASS",
+    "scope_integrity": "PASS: final allowlist diff and byte checks"
+  },
+  "regression_suite": "NOT RUN this evidence-only phase; prior 566 PASS remains historical",
+  "unknown": [
+    "fee estimate/budget/actual GEN consumption",
+    "wallet signature transcript",
+    "complete Studio schema-error stderr",
+    "verified Explorer detail URL"
+  ],
+  "limits": [
+    "Deployment constructor consensus does not exercise assess_cycle or prove semantic model accuracy",
+    "No Intent, matching, confirmations, ACTIVE cycle or negative E2E performed",
+    "Unexpected real-node mid-write rollback unverified"
+  ],
+  "browser_observation": {
+    "url": "https://explorer-studio.genlayer.com/",
+    "visible_text": "Application error: a server-side exception has occurred while loading explorer-studio.genlayer.com (see the server logs for more information). Digest: 2144917332"
+  }
+}
