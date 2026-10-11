@@ -1,0 +1,53 @@
+{
+  "phase": "PHASE 1",
+  "network": {
+    "name": "Stable Studionet",
+    "chain_id": 61999,
+    "rpc": "https://studio.genlayer.com/api",
+    "metadata_method": "eth_chainId",
+    "actual_result": "0xf22f",
+    "blockchain_writes": 0
+  },
+  "source_path": "contracts/semantic_cycle_accord.py",
+  "source_sha256": "628742fbceec1e8e343dc35bd2f15b78b286e7953eaaf725b5597f139fff1306",
+  "python": "3.12.14",
+  "genlayer_test": "0.29.2",
+  "genvm_release": "v0.2.16",
+  "genvm_linter": "0.11.0",
+  "pytest": "9.1.1",
+  "ruff": "0.14.0",
+  "pytest_execution": {
+    "command": ".venv/bin/python scripts/verify_local.py",
+    "pass": 176,
+    "fail": 0,
+    "skip": 0,
+    "applicable_not_run": 0,
+    "observed_pytest_seconds": 4.86,
+    "per_file_collected": {
+      "tests/deterministic/test_cycles.py": 21,
+      "tests/deterministic/test_intents.py": 57,
+      "tests/deterministic/test_reads_storage.py": 17,
+      "tests/security/test_boundaries.py": 21,
+      "tests/security/test_integrity.py": 35,
+      "tests/state_machine/test_transitions.py": 25
+    }
+  },
+  "checks": {
+    "genvm_ast_lint": "PASS",
+    "genvm_sdk_validation": "PASS",
+    "schema": "PASS",
+    "ruff": "PASS",
+    "ruff_format": "PASS",
+    "storage_serialization_and_reconstruction": "PASS included in executed suite",
+    "calldata_roundtrips": "PASS included in executed suite"
+  },
+  "excluded_not_run": [
+    "full GenVM WASM execution",
+    "real deployment",
+    "network-backed contract integration",
+    "semantic Leader/Validator consensus",
+    "onchain transactions",
+    "frontend"
+  ],
+  "initial_main_head": "98784894a470c31ca1ebe2e075092582bb88403e"
+}
