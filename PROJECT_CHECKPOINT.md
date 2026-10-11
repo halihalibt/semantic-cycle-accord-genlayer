@@ -7,9 +7,11 @@
 - Work branch: `phase1-deterministic-core`; target base: `main`.
 - Initial main baseline: `98784894a470c31ca1ebe2e075092582bb88403e`.
 - Main contained only the new project's README and MIT License; no unrelated work.
-- Publication identifiers are recorded in `evidence/phase1/publication.json`
-  after the implementation commit is created. The draft PR's head is the latest
-  checkpoint; any reporting-only follow-up does not change the tested source.
+- Tested implementation commit: `76f0b6ba8515132a6468ad5f9f67067fb932861d`.
+- Draft PR: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/1 — OPEN, DRAFT, NOT MERGED.
+- Publication identifiers are recorded in `evidence/phase1/publication.json`.
+  The Draft PR head includes a reporting-only follow-up with these real IDs;
+  it does not change the tested canonical contract or tests.
 
 ## Current acceptance
 

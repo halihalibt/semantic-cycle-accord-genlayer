@@ -4,8 +4,10 @@
 
 Deterministic Phase 1 implementation is complete and locally verified. The
 checkpoint is for review on `phase1-deterministic-core`; main is not merged.
-Publication metadata is in `evidence/phase1/publication.json` once the actual
-GitHub commit and Draft PR exist. No fabricated URL, hash, deployment or
+Tested implementation commit: `76f0b6ba8515132a6468ad5f9f67067fb932861d`.
+Draft PR: https://github.com/halihalibt/semantic-cycle-accord-genlayer/pull/1 — OPEN, DRAFT, NOT MERGED.
+Publication metadata is in `evidence/phase1/publication.json`. A reporting-only
+follow-up records these IDs without changing tested source or tests. No fabricated URL, hash, deployment or
 consensus claim is used.
 
 Repository: https://github.com/halihalibt/semantic-cycle-accord-genlayer
