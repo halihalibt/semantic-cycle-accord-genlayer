@@ -10,7 +10,7 @@
 | Contract | https://explorer-studio.genlayer.com/address/0x84e9284448D4cd16dcBBCbd8104449B11209C6F0 |
 | Network | Stable Studionet, Chain ID 61999 |
 | Complete source | https://github.com/halihalibt/semantic-cycle-accord-genlayer/blob/main/contracts/semantic_cycle_accord.py |
-| Proof materials | https://github.com/halihalibt/semantic-cycle-accord-genlayer/blob/main/docs/PHASE_4C_E2E_EVIDENCE_INDEX.md |
+| Proof materials | https://github.com/halihalibt/semantic-cycle-accord-genlayer/blob/main/docs/VERIFIED_ONCHAIN_EXAMPLES.md |
 | Supplemental information | https://github.com/halihalibt/semantic-cycle-accord-genlayer/blob/main/README.md |
 | License | MIT |
 
