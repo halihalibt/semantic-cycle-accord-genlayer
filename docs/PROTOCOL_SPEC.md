@@ -120,7 +120,8 @@ no protocol writes. Input order defines the ring: edge i must be
 `[intent_ids[i], intent_ids[(i+1)%3]]`.
 
 `_reserve_accepted_cycle` is private and undecorated. It accepts topology and
-version inputs, not classifications, and remains private/undecorated. The public assess_cycle invokes it only after
+version inputs, not classifications, and remains private/undecorated. The public
+assess_cycle invokes it only after
 accepted legitimate custom consensus returns exactly three FIT labels. It reruns
 preparation immediately before writing all three reservations and one PENDING
 Cycle. Historical Phase 1 test fixtures still call it internally; those fixture
@@ -202,7 +203,8 @@ true and add assessment_total. Fixture-created Cycles are not relabeled assessme
 All predictable state/counter errors and bounded local record construction precede
 writes. Unexpected storage faults within the commit block depend on VM transaction
 rollback. Direct Mode validates expected safety without rollback and tests unexpected
-faults only with an explicitly simulated transaction boundary. Full production consensus WASM rollback testing is NOT RUN.
+faults only with an explicitly simulated transaction boundary. Full production
+consensus WASM rollback testing is NOT RUN.
 
 MATCHED/PENDING is distinct from wallet confirmations, ACTIVE and network FINALIZED.
 A stored assessment reflects successful contract execution, not independently
