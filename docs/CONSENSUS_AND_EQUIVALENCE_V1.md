@@ -71,8 +71,9 @@ prompt version and digest. No fabricated vote/finality fields exist.
 
 `get_assessment` reads stored data only. `cycle_status` is the related Cycle's
 current effective state or NONE; `result` remains the original semantic outcome.
-MATCHED is not ACTIVE; ACTIVE is agreement, not service delivery. No transaction
-has been verified FINALIZED in this phase.
+MATCHED is not ACTIVE; ACTIVE is agreement, not service delivery. The historical
+offline suite did not verify transaction finality. Separate
+[onchain examples](VERIFIED_ONCHAIN_EXAMPLES.md) document finalized release execution.
 
 ## Atomicity verification boundary
 
@@ -101,5 +102,7 @@ VM consensus termination is a separate fault-injection test of deterministic
 failure handling; it is not fake voting or a replacement for captured callback
 checks. Semantic fixture labels are canned expectations, not measured LLM
 accuracy. Prompt/data boundaries and independent comparison are tested, but
-systematic model error and prompt injection are not eliminated. Full GenVM WASM,
-live consensus/finality, races and cross-platform execution remain NOT RUN.
+systematic model error and prompt injection are not eliminated. These offline tests
+do not establish full production consensus WASM behavior,
+live consensus/finality, races or cross-platform execution. Live positive/negative
+results are documented separately in the [onchain examples](VERIFIED_ONCHAIN_EXAMPLES.md).

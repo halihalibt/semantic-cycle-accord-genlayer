@@ -1,19 +1,21 @@
 # SCA-3 V1 Protocol Specification
 
-## Product and phase boundary
+## Protocol scope
 
 Exactly three different wallets exchange digital services in one directed ring:
 A supplies B, B supplies C, C supplies A. Each supply must satisfy its recipient's
 need, including limitations and requirements. `ACTIVE` means every participant
 accepted the same commitment; it does not mean services have been delivered.
 No payment, custody, reputation, delivery, arbitration, token, privileged
-operator, upgrade authority, frontend, or centralized matching service exists.
+operator, upgrade authority or centralized matching service is implemented by the contract.
+The separate Semantic Cycle Exchange frontend integrates this reusable protocol.
 
-Phase 2 adds native custom nondeterministic Leader/Validator execution on the
-unchanged Phase 1 core. Every Validator independently classifies all three edges
+Native custom nondeterministic Leader/Validator execution integrates with the
+deterministic core. Every Validator independently classifies all three edges
 and compares exact position-sensitive FIT / NO_FIT / UNSURE labels. Only three
 FIT labels produce MATCHED/PENDING. All other valid vectors persist NOT_MATCHED.
-See CONSENSUS_AND_EQUIVALENCE_V1.md for the exact mechanism and offline limits.
+See [consensus and equivalence](CONSENSUS_AND_EQUIVALENCE_V1.md) for the exact
+mechanism and offline limits.
 
 ## Storage schema
 
@@ -75,7 +77,7 @@ the actual network/contract identity. It establishes no administrator.
 | decline_cycle | cycle_id, snapshot_id | Eligible participant aborts PENDING and permanently blocks this exact snapshot |
 | expire_cycle | cycle_id | Permissionless cleanup at/after deadline; True once, False for an already cleaned EXPIRED cycle |
 
-Phase 2 adds `assess_cycle(intent_ids, versions, edges)` as the seventh write,
+`assess_cycle(intent_ids, versions, edges)` is the seventh write,
 returning `{assessment_id, result, cycle_id}`. Its parameters are three IDs,
 three expected versions and three directed edges. Caller must be an actual
 participant. Preflight runs before AI and again after accepted VM output;
@@ -118,7 +120,8 @@ no protocol writes. Input order defines the ring: edge i must be
 `[intent_ids[i], intent_ids[(i+1)%3]]`.
 
 `_reserve_accepted_cycle` is private and undecorated. It accepts topology and
-version inputs, not classifications, and remains private/undecorated. Phase 2 assess_cycle invokes it only after
+version inputs, not classifications, and remains private/undecorated. The public
+assess_cycle invokes it only after
 accepted legitimate custom consensus returns exactly three FIT labels. It reruns
 preparation immediately before writing all three reservations and one PENDING
 Cycle. Historical Phase 1 test fixtures still call it internally; those fixture
@@ -179,7 +182,7 @@ records. Fixed-size content is checked before storage. No public operation
 scans a wallet's complete history or all global records. Terminal mutations
 reject or are explicit idempotent expiration no-ops.
 
-## Phase 2 assessment storage and replay
+## Assessment storage and replay
 
 Append exactly three root fields after all original fields: typed
 `assessments: TreeMap[u256, Assessment]`, `assessed_snapshots: TreeMap[str, u64]`,
@@ -200,9 +203,11 @@ true and add assessment_total. Fixture-created Cycles are not relabeled assessme
 All predictable state/counter errors and bounded local record construction precede
 writes. Unexpected storage faults within the commit block depend on VM transaction
 rollback. Direct Mode validates expected safety without rollback and tests unexpected
-faults only with an explicitly simulated transaction boundary. Full WASM is NOT RUN.
+faults only with an explicitly simulated transaction boundary. Full production
+consensus WASM rollback testing is NOT RUN.
 
 MATCHED/PENDING is distinct from wallet confirmations, ACTIVE and network FINALIZED.
 A stored assessment reflects successful contract execution, not independently
 verified blockchain finality. No finality fields, vote counts or Validator IDs are
-invented. No real transaction finality was tested in Phase 2.
+invented. No real transaction finality was tested in the historical Phase 2 offline suite.
+The deployed release has separate [verified onchain examples](VERIFIED_ONCHAIN_EXAMPLES.md).
