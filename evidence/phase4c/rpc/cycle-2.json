@@ -1,0 +1,22 @@
+{
+  "label": "cycle-2",
+  "timestamp_utc": "2026-10-11T20:19:55.367341+00:00",
+  "url": "https://studio.genlayer.com/api",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "cycle-2",
+    "method": "gen_call",
+    "params": [
+      {
+        "type": "read",
+        "to": "0x84e9284448D4cd16dcBBCbd8104449B11209C6F0",
+        "from": "0x22Acaa233b7b985b36ef168F2DE9295334065B15",
+        "data": "0xdb991604617267730d11066d6574686f644c6765745f6379636c6500",
+        "transaction_hash_variant": "latest-final"
+      }
+    ]
+  },
+  "exit_code": 0,
+  "stdout": "{\"jsonrpc\":\"2.0\",\"result\":\"0e05666f756e6408\",\"id\":\"cycle-2\"}",
+  "stderr": ""
+}

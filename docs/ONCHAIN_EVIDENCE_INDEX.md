@@ -1,7 +1,18 @@
 # SCA-3 V1 — Onchain evidence index
 
-Phase 4B deployment and empty initial read only. Full interpretation and limits:
-[PHASE_4B_REPORT.md](PHASE_4B_REPORT.md). No Phase 4C evidence exists.
+Current Phase 4C positive/negative E2E:
+[report](PHASE_4C_REPORT.md), [E2E transaction/screenshot index](PHASE_4C_E2E_EVIDENCE_INDEX.md),
+[acceptance matrix](PHASE_4C_ACCEPTANCE_MATRIX.md). Machine-readable evidence:
+[transactions](../evidence/phase4c/transactions.json), [final state](../evidence/phase4c/final-state.json),
+[raw records](../evidence/phase4c/rpc/), [verification](../evidence/phase4c/verification.json).
+11 successful finalized writes; positive ACTIVE Cycle #1; negative NOT_MATCHED/no
+new Cycle. Historical intermediate raw-read gaps remain explicit.
+
+## Preserved Phase 4B deployment evidence
+
+The records and limitations below describe the historical Phase 4B checkpoint.
+Its initial empty state is a historical read, not the current contract state.
+Full Phase 4B interpretation: [PHASE_4B_REPORT.md](PHASE_4B_REPORT.md).
 
 | Artifact | Provenance / contents |
 | --- | --- |

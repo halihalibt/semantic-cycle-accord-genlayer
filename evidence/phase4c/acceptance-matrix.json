@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "G01",
+      "requirement": "Baseline, public owner, network and frozen deployment source/Prompt",
+      "status": "PASS",
+      "basis": "GitHub main, chain-id, fresh deployment raw/source-identity"
+    },
+    {
+      "id": "G02",
+      "requirement": "11 transaction hashes, calldata, cryptographic signers, successful Returns and finality",
+      "status": "PASS",
+      "basis": "33 raw records; signed domain/payload recovery"
+    },
+    {
+      "id": "G03",
+      "requirement": "Six exact frozen create vectors, IDs, owners, versions and valid expiry",
+      "status": "PASS",
+      "basis": "Original raw calldata + fresh final get_intent"
+    },
+    {
+      "id": "G04",
+      "requirement": "Historical post-create OPEN/zero-cycle read gates",
+      "status": "PARTIAL",
+      "basis": "Original user screenshots present; original raw historical reads unavailable"
+    },
+    {
+      "id": "G05",
+      "requirement": "Positive full-ring AI acceptance beyond Leader-only output",
+      "status": "PASS",
+      "basis": "3 agree/2 idle; Accepted; two non-Leader successful LLM Validator receipts"
+    },
+    {
+      "id": "G06",
+      "requirement": "Assessment #1 MATCHED, FIT/FIT/FIT, topology, source Prompt hash and original snapshot",
+      "status": "PASS",
+      "basis": "Fresh final get_assessment + raw Leader eq output + reconstructed digest"
+    },
+    {
+      "id": "G07",
+      "requirement": "Historical zero-confirmation PENDING / RESERVED and count 1/2 reads",
+      "status": "PARTIAL",
+      "basis": "Original screenshot evidence; no independently acquired historical raw state"
+    },
+    {
+      "id": "G08",
+      "requirement": "Three distinct confirmations of identical snapshot before deadline",
+      "status": "PASS",
+      "basis": "Recovered A/B/C signatures, exact calldata and true Returns"
+    },
+    {
+      "id": "G09",
+      "requirement": "Cycle #1 ACTIVE/count 3; #1\u2013#3 CONSUMED and cycle_id 1",
+      "status": "PASS",
+      "basis": "Fresh latest-final reads, repeated Cycle read"
+    },
+    {
+      "id": "G10",
+      "requirement": "Negative full-ring NO_FIT acceptance, NOT_MATCHED/0/NONE",
+      "status": "PASS",
+      "basis": "Raw accepted consensus, Leader eq output, final/repeated Assessment #2"
+    },
+    {
+      "id": "G11",
+      "requirement": "Negative #4\u2013#6 OPEN/0; no new Cycle; original ACTIVE cycle/snapshot retained",
+      "status": "PASS",
+      "basis": "Six intent reads, cycle-2 not found, full Cycle page, repeated Cycle #1"
+    },
+    {
+      "id": "G12",
+      "requirement": "Original machine-readable before-negative counters",
+      "status": "PARTIAL",
+      "basis": "User screenshots of positive-only counters present; original raw counter read absent"
+    },
+    {
+      "id": "G13",
+      "requirement": "Final counters 6/2/1/1 and 3 CONSUMED/3 OPEN/0 RESERVED",
+      "status": "PASS",
+      "basis": "Full statistics page and second independent matching read"
+    },
+    {
+      "id": "G14",
+      "requirement": "Original consensus histories/votes/leader results/rounds/rotations retained",
+      "status": "PASS",
+      "basis": "Full raw transaction objects; agree/idle/cancellation distinction"
+    },
+    {
+      "id": "G15",
+      "requirement": "Original screenshots, evidence schema shapes, checksums, links and scope",
+      "status": "PASS",
+      "basis": "60 private original byte checks + public metadata/checksums + offline verification; PNG publication blocked by automatic review"
+    },
+    {
+      "id": "G16",
+      "requirement": "Actual fee estimate/budget/consumed GEN",
+      "status": "UNKNOWN",
+      "basis": "Compatibility receipt fields preserved; no inferred fee"
+    },
+    {
+      "id": "G17",
+      "requirement": "Raw independent Validator response text/full runtime prompt transcripts",
+      "status": "UNAVAILABLE",
+      "basis": "Votes and token statistics acquired; separate response text not exposed"
+    },
+    {
+      "id": "G18",
+      "requirement": "Contract regression suite in this evidence-only phase",
+      "status": "NOT RUN",
+      "basis": "Historical 566 PASS retained as historical"
+    },
+    {
+      "id": "G19",
+      "requirement": "Unexpected mid-write real-node rollback",
+      "status": "NOT RUN",
+      "basis": "No deliberately injected faults"
+    },
+    {
+      "id": "G20",
+      "requirement": "Actual service delivery / complete production security certification",
+      "status": "NOT RUN",
+      "basis": "ACTIVE is accepted commitment only"
+    },
+    {
+      "id": "G21",
+      "requirement": "Public publication of original user screenshot bytes",
+      "status": "BLOCKED",
+      "basis": "Automatic approval review rejected public disclosure without explicit approval; metadata inventory only is public"
+    }
+  ],
+  "overall": "FINAL_OUTCOMES_INDEPENDENTLY_VERIFIED_WITH_HISTORICAL_READ_GAPS"
+}

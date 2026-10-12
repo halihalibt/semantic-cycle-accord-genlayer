@@ -17,7 +17,26 @@ exactly the three Intents. **ACTIVE means accepted commitment, not delivered
 services.** There are no payments, tokens, custody, reputation, arbitration,
 fulfillment guarantees or matching administrator.
 
-## Phase 3 security checkpoint and execution limits
+## Current real onchain checkpoint — Phase 4C
+
+The user has completed real positive and negative E2E on Stable Studionet 61999.
+An evidence-only phase independently verified all 11 writes, signatures, exact
+calldata, FINALIZED/SUCCESS/MAJORITY_AGREE, accepted consensus and persisted state.
+Cycle #1 is ACTIVE with three confirmations; the incompatible SVG/PNG case is
+NOT_MATCHED without a new Cycle. Both semantic assessments have 3 agree + 2 idle.
+
+Contract: `0x84e9284448D4cd16dcBBCbd8104449B11209C6F0`.
+Read [Phase 4C report](docs/PHASE_4C_REPORT.md),
+[transaction evidence index](docs/PHASE_4C_E2E_EVIDENCE_INDEX.md) and
+[acceptance matrix](docs/PHASE_4C_ACCEPTANCE_MATRIX.md).
+Original intermediate state reads are screenshot evidence; historical raw JSON,
+fees, full Validator model transcripts and unexpected real-node rollback remain
+explicit limitations. ACTIVE is commitment, not delivery. Draft review only.
+
+## Historical Phase 3 security checkpoint and execution limits
+
+The following paragraph records the pre-deployment Phase 3 checkpoint and is
+superseded by the current Phase 4C evidence above where applicable.
 
 Phase 1 and Phase 2 are merged. Phase 3 local security closure awaits independent review.
 The public semantic path is implemented; offline testing uses canned native LLM

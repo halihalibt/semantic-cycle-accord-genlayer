@@ -1,0 +1,84 @@
+{
+  "provenance": "Derived record of visible Explorer UI inspection via browser; not an original receipt or downloaded API payload. Each detail page was opened and observed.",
+  "observed_at_utc": "2026-10-11T20:25:40.652229+00:00",
+  "transactions": [
+    {
+      "hash": "0xce94c5a03d32d0af9592ee1060667ccff19e8c47e3d4f56f1e1e4f0636c19e92",
+      "url": "https://explorer-studio.genlayer.com/tx/0xce94c5a03d32d0af9592ee1060667ccff19e8c47e3d4f56f1e1e4f0636c19e92",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0xc02f228c9d13dd57ffe0df063ba4032d4a1e6b4a86769ebc59557f611b257e45",
+      "url": "https://explorer-studio.genlayer.com/tx/0xc02f228c9d13dd57ffe0df063ba4032d4a1e6b4a86769ebc59557f611b257e45",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0xdf3cc58f55e7ad77bcbcb4d2e4f46d05131da80e0b2946ce0d60de2b2d8b149d",
+      "url": "https://explorer-studio.genlayer.com/tx/0xdf3cc58f55e7ad77bcbcb4d2e4f46d05131da80e0b2946ce0d60de2b2d8b149d",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0xc71701f70199e4d65565adb2bbee2592e4e463f3fbf81b25d99b10c9de703968",
+      "url": "https://explorer-studio.genlayer.com/tx/0xc71701f70199e4d65565adb2bbee2592e4e463f3fbf81b25d99b10c9de703968",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0x48c3a1d262adba989c1f37520b871919b619a61e9bb721e14eeffeac6ca1b34b",
+      "url": "https://explorer-studio.genlayer.com/tx/0x48c3a1d262adba989c1f37520b871919b619a61e9bb721e14eeffeac6ca1b34b",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0x4736fce42672766d2b589eab8a73d8bee56caf202c7ceaf1c83ada8b9fbd4531",
+      "url": "https://explorer-studio.genlayer.com/tx/0x4736fce42672766d2b589eab8a73d8bee56caf202c7ceaf1c83ada8b9fbd4531",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0xcc310816d39b379189690be115241f594719c44959351232908b9ab85ee8ef82",
+      "url": "https://explorer-studio.genlayer.com/tx/0xcc310816d39b379189690be115241f594719c44959351232908b9ab85ee8ef82",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0x0de8eae342b2ee8f957fa81b079c0bfa1e8ad5d9f1e59a0cb6892ef24e48ef86",
+      "url": "https://explorer-studio.genlayer.com/tx/0x0de8eae342b2ee8f957fa81b079c0bfa1e8ad5d9f1e59a0cb6892ef24e48ef86",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0x0508f72d44c7d6d92db5b89cd9d2bbca0917f9518fc96b207b4fda748f8f3064",
+      "url": "https://explorer-studio.genlayer.com/tx/0x0508f72d44c7d6d92db5b89cd9d2bbca0917f9518fc96b207b4fda748f8f3064",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0xdd549213898fc72d7c4414868f417af8ca8467a8f4369dcd86235294a3ace674",
+      "url": "https://explorer-studio.genlayer.com/tx/0xdd549213898fc72d7c4414868f417af8ca8467a8f4369dcd86235294a3ace674",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    },
+    {
+      "hash": "0x0bb517817a4dd54ec6afb1b1d04223fb78804ed3f6e561f2ca65ca31d2b3234f",
+      "url": "https://explorer-studio.genlayer.com/tx/0x0bb517817a4dd54ec6afb1b1d04223fb78804ed3f6e561f2ca65ca31d2b3234f",
+      "finalized": true,
+      "success": true,
+      "accepted": true
+    }
+  ],
+  "note": "UI renders integer parameters as quoted strings; raw calldata decoding establishes integer types. Display time depends on browser locale; raw RPC timestamps retained."
+}

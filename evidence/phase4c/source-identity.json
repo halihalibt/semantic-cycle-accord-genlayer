@@ -1,0 +1,16 @@
+{
+  "baseline_main": "2215e6fac7d4922b50ff1546bae76b6e4e3a530c",
+  "baseline_tree": "6f655969dfcf32667e8e8569e94b34dd11c367e3",
+  "source_path": "contracts/semantic_cycle_accord.py",
+  "source_size_bytes": 32040,
+  "source_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "deployment_source_sha256": "88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442",
+  "deployment_byte_identity": true,
+  "deployment_transaction": "0x3bf2036d9683c6ab55b09cacf54bdeb8ecfa7cb8e7864b832ae7041067f196cc",
+  "deployment_contract": "0x84e9284448D4cd16dcBBCbd8104449B11209C6F0",
+  "prompt_sha256": "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+  "persisted_assessment_prompt_hashes": [
+    "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3",
+    "8a7b279a3594397802c71fef4df9b4d30db1ff528177d0bf05c80a62397192d3"
+  ]
+}

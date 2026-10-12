@@ -1,0 +1,487 @@
+{
+  "screenshots": [
+    {
+      "original_filename": "image(20261011-191130).png",
+      "bytes": 182840,
+      "sha256": "6f7f2a171a704f42734ae52a8c659f6d800afd11343f2ecb7954ce9e5b915057",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191130.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191134).png",
+      "bytes": 211221,
+      "sha256": "afa7d0228b78379fb2a732c511308bded3026d0bf9effb132a4460c7152e83df",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191134.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191419).png",
+      "bytes": 87013,
+      "sha256": "f20e456bc6d191a83e80e6a87c7bc1e36609ccd957a1ec78a771201b6379095a",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191419.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191731).png",
+      "bytes": 128650,
+      "sha256": "32c1612c3f67ddec7833119995405e1e808ac4bde0b994131a7ef47d9fb630bb",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191731.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191738).png",
+      "bytes": 49686,
+      "sha256": "8e0d012a70c0cf7f0f5304a774d5ad581cbe5dc9d45524d19489b039a01f83f3",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191738.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191908).png",
+      "bytes": 89620,
+      "sha256": "440c14b13563ebb337c7a4f24b8782fb0284fff5cd2f2fdb0ffd180d9aa7c8ad",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191908.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191925).png",
+      "bytes": 128476,
+      "sha256": "9c7c6c0ee26823bde4c24747895004e29e8b4a939534c13185e0ea7abfb17eb9",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191925.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191929).png",
+      "bytes": 29446,
+      "sha256": "646f50dce63ee18bbef58aa65e7e8d096d654ac9a10333970d3b292567fda3f0",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191929.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-191943).png",
+      "bytes": 90502,
+      "sha256": "c4941b80695778e5651cbd9a2e1ad2a237015c12cb9b1ae63209fe8fde538032",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-191943.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192518).png",
+      "bytes": 135454,
+      "sha256": "c6f473bc8a52a1c2ce0c8be12e93ac478e4d4637c6f86d96e3f1f59f25085b8a",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192518.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192527).png",
+      "bytes": 98670,
+      "sha256": "87c7ee2b4cc9448916b650e8b9f1bcad72fd17ac92cd4cf87325b0487912dadb",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192527.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192709).png",
+      "bytes": 172591,
+      "sha256": "2948c77c3bb3a972f56010feed48ac8ddc52895e25c0ff7da82ff61cbc56237c",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192709.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192724).png",
+      "bytes": 80595,
+      "sha256": "91713faa8207c17cb2bbfbdb523a4e5c32904d227243bb71ba2d13756d27f52c",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192724.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192750).png",
+      "bytes": 164931,
+      "sha256": "6a0a95709caf5bae0e223783f3a9fb582fbd20d180cae1d50547142b8a8c8ba4",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192750.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192806).png",
+      "bytes": 183241,
+      "sha256": "af4996e68499921fd673c5c76fd1b80eacd39f2adefc16e0551f17c6a588810f",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192806.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192817).png",
+      "bytes": 95929,
+      "sha256": "e946a08bd62f4cbd3ae7ca57ed2f2859b42fe07b9940effb97cf722af46f7fbd",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192817.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192857).png",
+      "bytes": 87124,
+      "sha256": "019a1c1b7be15da06848e598ec7316a73b72593ff26c0e1cb190a4b109622a79",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192857.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192907).png",
+      "bytes": 89372,
+      "sha256": "62b8f2d2e3c2a0468476018fb621021bfac6114d4b3a1b5f6f9849c50aa3477d",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192907.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-192919).png",
+      "bytes": 91211,
+      "sha256": "75a7f829df10e49c360934a7b3da4949a2f120fca03e6f510b7051b1803e47f5",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-192919.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193030).png",
+      "bytes": 139637,
+      "sha256": "a161e4c662a56224de67bc3c1534b91b92b66c84a004d6f676b832aefbeafd41",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193030.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193035).png",
+      "bytes": 111538,
+      "sha256": "5fc75ff5114fac19f5dc8ca66020f7e69c48daa8bff92cdcbb59565688e37540",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193035.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193445).png",
+      "bytes": 196704,
+      "sha256": "7b2c476575056289fb54a7481c0adb1e31afaa21db1cfb91cf099245c3f9feec",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193445.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193456).png",
+      "bytes": 169157,
+      "sha256": "53f2b4abaffa98d79217129b2177bdfa8786308b8e3d6c0b3e645598685fad4d",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193456.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193505).png",
+      "bytes": 182282,
+      "sha256": "ee5b3f5cca1e93403ad3d7e331633fac3941a637a5cd76293d6ef19cf4c81d8a",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193505.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193512).png",
+      "bytes": 38261,
+      "sha256": "7758f12043d3edaf72b74e32869652960debd14fa5af77f6588b0715b31e122a",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193512.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-193911).png",
+      "bytes": 398857,
+      "sha256": "cf131ff24807c057933f65c2223570887218512bb8e0febf597cf955ede568f6",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-193911.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194157).png",
+      "bytes": 399078,
+      "sha256": "f87d250a5a2aaa2c273dcd3692dca39f69eb5102a8706db65d6a22799f53838c",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194157.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194304).png",
+      "bytes": 399030,
+      "sha256": "27df9226a526fe0812db636fa21d07bb0ab643757d145e6de7de288656f7e89a",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194304.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194330).png",
+      "bytes": 43037,
+      "sha256": "2f6ddc8dad2e020823d0a0d011be175a8c0d5718767cae209c3cf99acb62ef51",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194330.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194643).png",
+      "bytes": 125497,
+      "sha256": "309b1f0fbaa097a5c5a4fc7ad0d26952bbf8a8f48ad8506c39a8d15b45f7f7c9",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194643.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194651).png",
+      "bytes": 108856,
+      "sha256": "fc32c1ffbdb7f84270ea01ff48d7745372324581940e73e3b4adbb5fe7ba4bea",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194651.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194700).png",
+      "bytes": 135691,
+      "sha256": "5eec06a3113801b2440014486481b2f25790bbd04c57ecc42b9e4096d8c21f9f",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194700.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194706).png",
+      "bytes": 108778,
+      "sha256": "afda7722e22e4e117b371d28133bdbab7f7a5afff9a85a9c964c22e6ba50395e",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194706.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194715).png",
+      "bytes": 124444,
+      "sha256": "1f3e97fd91a7019dc9d737520d97168bfadefe55ae12f278e4da1cef3592beda",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194715.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194722).png",
+      "bytes": 108723,
+      "sha256": "06c8672d9874c87fe8d322d95fa0ca595420bbe251aea0b70e532ac292993e48",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194722.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194744).png",
+      "bytes": 85720,
+      "sha256": "26818942398b690c8cb9e2388dd1a0f71346163f48853a657bd89c2d739903a0",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194744.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194752).png",
+      "bytes": 88713,
+      "sha256": "79e495dd65fc4cd936010b6bdf4797cf723ae4fafe6f8e39a476ce490e9b55b4",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194752.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-194800).png",
+      "bytes": 89597,
+      "sha256": "2c20c3db3cbf4d807db0e755a773964b08d972e4881b13e84b9e9a2a0317becc",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-194800.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195422).png",
+      "bytes": 42876,
+      "sha256": "dc4781bdb008e7b489ec7414d933f5e5cc2c20138216def1e74f79d429996bd1",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195422.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195441).png",
+      "bytes": 400246,
+      "sha256": "4c2ccd045116e952fdae828b2b49319dd655d7b091e46f4631064bf11ebcd2a8",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195441.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195642).png",
+      "bytes": 169656,
+      "sha256": "05b0b4cafd1f8282d6a02bd604301bc256dd8a60b791c2eeb2e84994496daf87",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195642.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195701).png",
+      "bytes": 85995,
+      "sha256": "fdf46a3b57fa68c1b8d755e5e29827bf3f24344a392160231fe0908e20b17613",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195701.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195918).png",
+      "bytes": 133853,
+      "sha256": "62bd110cd4a4122027cbd56a1d1df3aa362903c26fae376cbc5ffa7edbd279c3",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195918.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195922).png",
+      "bytes": 165151,
+      "sha256": "e652a94000341db06d4c0bc1da83e7451697776bc83d85c24bd0b2d298fe5bb5",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195922.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-195956).png",
+      "bytes": 84476,
+      "sha256": "4f2c8fbc5da42845541c019a08de61c80729a14c57005e8dd1ae9e388575e81e",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-195956.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200129).png",
+      "bytes": 133046,
+      "sha256": "6f4e10c9bfc5370d50405ac201f57e4bd4b8ef8e61f2d0788e8821fbd13f6e4b",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200129.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200135).png",
+      "bytes": 181698,
+      "sha256": "aa6f60b8ccae2e09007640aa15b859578f849446273e929cfdc5bd125c2bf1ca",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200135.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200201).png",
+      "bytes": 89286,
+      "sha256": "6d5731442446674ffe3e49e4c48b3b1dfea2162e3d5eb9831b9c56d02cbde0fb",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200201.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200459).png",
+      "bytes": 86881,
+      "sha256": "c9edc84c84488b204b53c820db08b5159fe456d7f3f111330d9afbcd1aab67ba",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200459.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200555).png",
+      "bytes": 231837,
+      "sha256": "0dcdbbd874480e9727b5eb71d613a319991f640b3429fb377d18f22bfd8eedb1",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200555.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200947).png",
+      "bytes": 84981,
+      "sha256": "27ed60a6580ba16a8b0f1961bfc155e660a10f66c4866d0a2f0e12d77deeb29e",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200947.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-200953).png",
+      "bytes": 84422,
+      "sha256": "e67362017b006c6dc0bbccece452c4c0f83cb462dd98b7194d608db170a208a7",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-200953.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201001).png",
+      "bytes": 88657,
+      "sha256": "d19f2cf487dfb9d98627f817bd76c09a970760f9d85e1208a1896e7470b9d570",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201001.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201018).png",
+      "bytes": 42678,
+      "sha256": "360f44bd3529c35ef8e5d7f3162239f8bb570a24ddb01aff2608ab470bbd5daf",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201018.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201044).png",
+      "bytes": 397818,
+      "sha256": "655f72b4788f333bb676fd6f3da683566fcfb9fd166e31f577911b320ba9689f",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201044.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201107).png",
+      "bytes": 133114,
+      "sha256": "a45b9febe5c3cad332b6b8783f5fd31ac622e6fc4ecce6a9b3abc538035d887c",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201107.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201126).png",
+      "bytes": 100463,
+      "sha256": "ca6a8821dbde689dfcc283b8ae3699fac0479232d92ee8273d72573baa991d12",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201126.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201211).png",
+      "bytes": 95489,
+      "sha256": "ed9bd0f8b6908334b74c9c09c349a73c9193b4216367e9b65702b337a5ce7d66",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201211.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201217).png",
+      "bytes": 88002,
+      "sha256": "aae04eac10922c24a41b7ecfeb6db377b00c2f2c0f73272d374777c512c058ce",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201217.png",
+      "public_path": null
+    },
+    {
+      "original_filename": "image(20261011-201225).png",
+      "bytes": 155154,
+      "sha256": "d2e5c2e56072bd6892568a46a8bb1dccd393c9709ae30559ac9cd71e6d46c18c",
+      "provenance": "Original user-uploaded Studio/Explorer screenshot; copied byte-for-byte, not independently captured.",
+      "private_archive_filename": "studio-20261011-201225.png",
+      "public_path": null
+    }
+  ],
+  "count": 60,
+  "note": "60 originals materialized and byte-verified privately. Automatic approval review rejected public GitHub disclosure; user approval must explicitly authorize uploading the originals to this public repository. Public package contains metadata/SHA256 only; no original PNG bytes.",
+  "publication_status": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW"
+}
