@@ -11,7 +11,7 @@ after their old timestamps pass.
 | New Intent | Valid create by actual caller | OPEN, version 1 |
 | OPEN Intent | Valid owner update with expected version | OPEN, version +1 |
 | OPEN Intent | Valid owner cancellation | CANCELLED |
-| OPEN Intent | Future accepted assessment invokes deterministic seam | RESERVED, linked to new PENDING Cycle |
+| OPEN Intent | Accepted FIT / FIT / FIT assessment | RESERVED, linked to new PENDING Cycle |
 | RESERVED Intent | Third independent valid confirmation | CONSUMED, linked to ACTIVE Cycle |
 | RESERVED Intent | Eligible cycle decline/cancellation | OPEN if valid; cancelled target becomes CANCELLED |
 | RESERVED Intent | Expiration cleanup | OPEN if still valid; otherwise EXPIRED |

@@ -1,62 +1,151 @@
-# Semantic Cycle Accord — SCA-3 V1
+# Semantic Cycle Accord
 
-SCA-3 is a GenLayer Intelligent Contract for reciprocal exchange between exactly
-three different wallets: **A supplies B, B supplies C, C supplies A**. Participants
-publish digital service offers and needs. Custom Leader/Validator assessment
-classifies all three directed offer-to-need relationships as FIT / NO_FIT / UNSURE.
+Semantic Cycle Accord (SCA-3 V1) is a GenLayer Intelligent Contract for three-party
+service exchange. Each participant offers a service and requests another. The
+contract assesses whether **A can supply B, B can supply C, and C can supply A**,
+then binds compatible terms to a commitment that requires all three owners' consent.
 
-The Leader calls the native GenLayer LLM once for the full ring. Each Validator
-independently repeats the same complete classification and must match all three
-canonical labels. Exactly `[FIT, FIT, FIT]` creates a MATCHED assessment and a
-PENDING commitment. Any NO_FIT or UNSURE persists NOT_MATCHED without reservation.
-Identical unchanged assessment snapshots cannot be retried to fish for a verdict.
+The protocol is independently reusable. [Semantic Cycle Exchange](https://github.com/halihalibt/semantic-cycle-exchange)
+is one application built on it; the contract does not depend on that frontend.
 
-All three actual owners must then independently confirm the same immutable
-snapshot. The third valid confirmation makes the Cycle ACTIVE and consumes
-exactly the three Intents. **ACTIVE means accepted commitment, not delivered
-services.** There are no payments, tokens, custody, reputation, arbitration,
-fulfillment guarantees or matching administrator.
+## The problem
 
-## Current real onchain checkpoint — Phase 4C
+A copywriter, a designer and a data-visualization specialist may each need a
+service offered by another participant. A direct two-person swap cannot satisfy
+all three. Even after forming a ring, matching keywords cannot establish whether
+the offered format, scope, restrictions and timing satisfy each recipient's need.
+Compatibility and consent are separate questions: a plausible match should not
+commit anyone automatically.
 
-The user has completed real positive and negative E2E on Stable Studionet 61999.
-An evidence-only phase independently verified all 11 writes, signatures, exact
-calldata, FINALIZED/SUCCESS/MAJORITY_AGREE, accepted consensus and persisted state.
-Cycle #1 is ACTIVE with three confirmations; the incompatible SVG/PNG case is
-NOT_MATCHED without a new Cycle. Both semantic assessments have 3 agree + 2 idle.
+## Protocol overview
 
-Contract: `0x84e9284448D4cd16dcBBCbd8104449B11209C6F0`.
-Read [Phase 4C report](docs/PHASE_4C_REPORT.md),
-[transaction evidence index](docs/PHASE_4C_E2E_EVIDENCE_INDEX.md) and
-[acceptance matrix](docs/PHASE_4C_ACCEPTANCE_MATRIX.md).
-Original intermediate state reads are screenshot evidence; historical raw JSON,
-fees, full Validator model transcripts and unexpected real-node rollback remain
-explicit limitations. ACTIVE is commitment, not delivery. Draft review only.
+1. Three distinct owners publish versioned **Intents** containing offers, needs,
+   restrictions and expiration times.
+2. A participant proposes a directed ring with exact Intent IDs and versions.
+3. GenLayer assesses all three offer-to-need relationships. Only `FIT / FIT / FIT`
+   creates a `MATCHED` Assessment and a `PENDING` Cycle, reserving the three Intents.
+4. Each owner independently confirms the same immutable snapshot.
+5. The third valid confirmation makes the Cycle `ACTIVE` and its Intents `CONSUMED`.
+   Participants can decline an eligible pending commitment; overdue cycles have
+   a permissionless cleanup path.
 
-## Historical Phase 3 security checkpoint and execution limits
+**ACTIVE means accepted commitment, not confirmed service delivery.**
 
-The following paragraph records the pre-deployment Phase 3 checkpoint and is
-superseded by the current Phase 4C evidence above where applicable.
+## Why GenLayer
 
-Phase 1 and Phase 2 are merged. Phase 3 local security closure awaits independent review.
-The public semantic path is implemented; offline testing uses canned native LLM
-responses and explicitly invokes captured Validators through Direct Mode.
-It is not evidence of real model accuracy, network consensus or finalized
-transactions. No deployment or onchain transaction has occurred. No frontend or
-Repository B exists. Four genuine isolated v0.2.16 WASM smoke invocations passed;
-production consensus WASM, actual node rollback and live execution are not verified.
+The compatibility question involves natural-language meaning rather than a fixed
+numeric predicate. A Leader classifies the complete ring through GenLayer's native
+LLM. Each Validator independently classifies the same immutable input and compares
+all three labels in their directed order. The contract applies an accepted result
+through deterministic state transitions; network consensus remains responsible
+for transaction acceptance and finality.
 
-The deterministic Phase 1 core, INV-01–16, original method behavior and persistent
-field prefix remain intact. Assessment fields are appended; read and storage
-compatibility, including actual frozen Phase 1 persisted bytes, are tested.
-Seven writes and seven views are exported, with no public verdict injection seam.
+## Three-party directed exchange
 
-## Fixed environment and reproduction
+Each edge compares the supplier's offer and limitations with the recipient's need
+and requirements. Ring rotation is normalized; reversing the direction is a
+different proposal. Exactly three distinct Intents and three distinct owners are
+required. There is no automatic global search or privileged matching operator.
 
-- Stable Studionet only: **61999**, `https://studio.genlayer.com/api`.
-- Python **3.12.14**, official GenVM **v0.2.16** content-pinned Python runner.
-- genlayer-test **0.29.2**, genvm-linter **0.11.0**, pytest **9.1.1**, Ruff **0.14.0**.
-- Original `uv.lock` retained. No upgraded SDK, alternate chain or paid API.
+The [verified positive example](docs/VERIFIED_ONCHAIN_EXAMPLES.md) exchanges product
+copy, a logo and a chart in the ring `1 → 3 → 2 → 1`. The negative example includes
+an SVG requirement incompatible with a PNG-only offer.
+
+## AI-assessed semantic compatibility
+
+The canonical classifier returns exactly three labels: `FIT`, `NO_FIT` or `UNSURE`.
+Any `NO_FIT` or `UNSURE` yields `NOT_MATCHED`, with no linked Cycle or reservation.
+Validators compare every position, not just the overall match result. No public
+method accepts a caller-supplied verdict. Identical unchanged snapshots cannot
+be reassessed to search for a favorable answer.
+
+See [consensus and equivalence](docs/CONSENSUS_AND_EQUIVALENCE_V1.md) and the
+[canonical classification prompt](docs/CANONICAL_CLASSIFICATION_PROMPT_V1.md).
+
+## Deterministic safety and snapshot binding
+
+The snapshot binds the chain, contract, exact owners, offer/need text, limitations,
+requirements, Intent versions, expirations and outgoing recipients. Its SHA-256
+identity is checked against the authoritative records before confirmations.
+Expected-version checks reject stale edits. Reservations prevent conflicting use
+of an Intent. A declined snapshot cannot be proposed again unchanged.
+
+Each text field is limited to 512 UTF-8 bytes. Intent validity is 1–30 days, with
+at most five effectively unfinished Intents per owner. Confirmation ends at the
+earlier of Cycle creation plus 72 hours or the earliest Intent expiration.
+See the [protocol specification](docs/PROTOCOL_SPEC.md) and
+[deterministic invariants](docs/DETERMINISTIC_INVARIANTS.md).
+
+## State machine
+
+| State | Meaning | Next eligible outcome |
+| --- | --- | --- |
+| OPEN Intent | Available, unexpired offer and need | Update, cancel or reserve after a matched assessment |
+| PENDING Cycle | Compatible terms reserved; owner consent incomplete | ACTIVE, ABORTED or EXPIRED |
+| ACTIVE Cycle | Three owners confirmed the exact snapshot | Terminal commitment; Intents CONSUMED |
+| ABORTED Cycle | Eligible participant declined or cancelled a reserved Intent | Terminal; eligible reservations released |
+| EXPIRED Cycle | Confirmation deadline reached | Permissionless cleanup releases eligible reservations |
+
+Reads distinguish effective expiry from stored state; reads never perform cleanup.
+See the [complete state machine](docs/STATE_MACHINE.md).
+
+## Contract interface
+
+Constructor: no arguments; deployment is restricted to chain **61999**.
+
+| Write method | Purpose |
+| --- | --- |
+| `create_intent` | Publish an offer and need with a deadline |
+| `update_intent` | Owner updates an OPEN Intent using its expected version |
+| `cancel_intent` | Owner cancels an eligible Intent |
+| `assess_cycle` | Assess exact IDs, versions and directed edges |
+| `confirm_cycle` | Participant confirms the snapshot ID |
+| `decline_cycle` | Participant declines an eligible pending snapshot |
+| `expire_cycle` | Clean up a Cycle at or after its deadline |
+
+Views: `get_intent`, `get_cycle`, `get_assessment`, `get_intents_page`,
+`get_cycles_page`, `get_owner_records`, `get_protocol_stats`.
+Exact signatures, result meanings and pagination are in the
+[specification](docs/PROTOCOL_SPEC.md) and [complete source](contracts/semantic_cycle_accord.py).
+
+## Deployment information
+
+| Item | Value |
+| --- | --- |
+| Network | Stable GenLayer Studionet, Chain ID 61999 |
+| RPC | https://studio.genlayer.com/api |
+| Contract | [0x84e9284448D4cd16dcBBCbd8104449B11209C6F0](https://explorer-studio.genlayer.com/address/0x84e9284448D4cd16dcBBCbd8104449B11209C6F0) |
+| Source | [contracts/semantic_cycle_accord.py](contracts/semantic_cycle_accord.py), 32,040 bytes |
+| Source SHA256 | `88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442` |
+
+The [deployment manifest](docs/DEPLOYMENT_MANIFEST_STUDIONET.md) links the original
+transaction and source verification. This release uses the existing deployment.
+
+## Verified onchain examples
+
+| Example | Verified outcome |
+| --- | --- |
+| Assessment #1 | MATCHED, FIT / FIT / FIT; linked Cycle #1 ACTIVE, 3 / 3 confirmations |
+| Assessment #2 | NOT_MATCHED, FIT / FIT / NO_FIT; cycle_id=0, no Cycle created by this assessment |
+
+[Case descriptions and transaction links](docs/VERIFIED_ONCHAIN_EXAMPLES.md) ·
+[wallet-free live inspection](https://halihalibt.github.io/semantic-cycle-exchange/?w=1) ·
+[full historical E2E evidence](docs/PHASE_4C_E2E_EVIDENCE_INDEX.md).
+Later application examples include Cycle #2 ACTIVE and Cycle #3 ABORTED; these are
+additional records on the same contract, not a replacement for the original cases.
+
+## Integration and local testing
+
+Create Intents, read current versions and construct the three directed edges.
+Call `assess_cycle(intent_ids, versions, edges)` as a participating owner. Read the
+returned Assessment and linked Cycle; obtain each owner's separate
+`confirm_cycle(cycle_id, snapshot_id)` or `decline_cycle(cycle_id, snapshot_id)` decision.
+`expire_cycle(cycle_id)` is available only when the genuine deadline has been reached.
+External callers should pass pagination offsets and limits explicitly.
+
+The application integration uses **genlayer-js@1.1.8**. Contract checks use Python
+3.12, GenVM v0.2.16 and genlayer-test 0.29.2 with the existing frozen lockfile.
+Clone with Git history because the storage-layout regression reads a historical baseline.
 
 ```bash
 uv sync --frozen
@@ -64,35 +153,30 @@ uv run python scripts/bootstrap_sdk.py
 uv run python scripts/verify_local.py
 ```
 
-Bootstrap verifies the official cached/downloaded artifact; it does not connect
-to a blockchain. Verification is offline with pytest plugin autoload disabled
-and test socket access blocked. The byte-layout test reads the frozen baseline
-from local git history, so retain repository history when reproducing.
+The archived contract suite records **566 PASS / 0 FAIL / 0 SKIP**. Offline tests
+use canned LLM responses and captured Validator callbacks; they are not measurements
+of real model accuracy or network finality. Real finalized transactions are documented
+separately in the onchain evidence.
 
-Phase 1 historical baseline: **229 PASS / 0 FAIL / 0 SKIP**, reproduced before edits.
-Phase 2 baseline: 505 PASS, reproduced unchanged for Phase 3.
-Phase 3 complete suite: 566 PASS / 0 FAIL / 0 SKIP, with 61 targeted new cases.
-Canonical contract and trusted prompt are unchanged. Final results and exact
-hashes are in the Phase 3 report and machine-readable evidence.
+## Security boundaries
 
-## Specifications and evidence
+There are no payments, escrow, custody, tokens, dispute resolution or automatic
+service delivery. Semantic consensus can still make systematic errors; prompt
+injection is a residual risk. Unexpected storage faults rely on GenVM transaction
+rollback; Direct Mode fault tests simulate that boundary and do not prove full
+production WASM rollback. Full Validator model transcripts and historical fees
+are not established by the retained evidence.
 
-- [Protocol](docs/PROTOCOL_SPEC.md) and [state machine](docs/STATE_MACHINE.md)
-- [INV-01 through INV-16](docs/DETERMINISTIC_INVARIANTS.md)
-- [Canonical Prompt V1](docs/CANONICAL_CLASSIFICATION_PROMPT_V1.md)
-- [Custom consensus and full equivalence](docs/CONSENSUS_AND_EQUIVALENCE_V1.md)
-- [Phase 2 tests, fixtures and limitations](docs/PHASE_2_TEST_AND_ACCEPTANCE.md)
-- [Phase 3 security audit](docs/PHASE_3_SECURITY_AUDIT.md) and [threat model](docs/PHASE_3_THREAT_MODEL.md)
-- [Phase 3 report](docs/PHASE_3_REPORT.md) and [tests/evidence levels](docs/PHASE_3_TEST_AND_ACCEPTANCE.md)
-- [Historical Phase 2 report](docs/PHASE_2_REPORT.md)
-- [Continuation checkpoint](PROJECT_CHECKPOINT.md)
-- [Master plan](WORK_MASTER_PLAN.md)
-- [Historical Phase 1 report](docs/PHASE_1_REPORT.md)
+The live positive `expire_cycle` test is **NOT RUN / TIME-GATED**. Dedicated Cycle #4
+was PENDING with ring `12 → 13 → 14 → 12` and deadline **2026-10-15 05:16:08 UTC+8**
+(`1792012568`). Offline expiry coverage does not establish live execution of that method.
 
-Local predictable failures are tested without rollback. Unexpected storage faults
-rely on GenVM transaction rollback; Direct Mode tests explicitly simulate that
-boundary and do not prove full WASM rollback. Prompt injection and systematic
-semantic error remain risks despite structured boundaries and independent checks.
-Growing finite histories and version-based fresh assessments remain design limits.
-Phase 3 Draft PR stays unmerged. Further stages require separate user authorization.
-MIT License retained.
+[Security analysis](docs/PHASE_3_SECURITY_AUDIT.md) ·
+[threat model](docs/PHASE_3_THREAT_MODEL.md) ·
+[test provenance](docs/PHASE_3_TEST_AND_ACCEPTANCE.md).
+Historical development and evidence records remain at their original paths for
+reproducibility; their checkpoint statuses describe the time they were recorded.
+
+## License
+
+[MIT](LICENSE).

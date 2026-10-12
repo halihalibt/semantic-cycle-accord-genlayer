@@ -1,5 +1,10 @@
 # SCA-3 V1 — Phase 4C positive / negative E2E evidence index
 
+This is the original positive/negative verification window. Its absence-of-Cycle-#2
+observation was correct at that time; later Assessment #3 created Cycle #2. See
+[current case descriptions](VERIFIED_ONCHAIN_EXAMPLES.md) for navigation. Original
+transaction records, raw reads, failed-run history and screenshot metadata are retained.
+
 Frozen merged main baseline: `2215e6fac7d4922b50ff1546bae76b6e4e3a530c`.
 See [report](PHASE_4C_REPORT.md) and [acceptance matrix](PHASE_4C_ACCEPTANCE_MATRIX.md)
 for provenance distinctions and remaining limitations.
