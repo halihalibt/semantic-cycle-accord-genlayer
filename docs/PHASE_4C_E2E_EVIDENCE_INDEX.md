@@ -58,66 +58,66 @@ each original filename/byte length/hash. Partial crops remain partial evidence.
 
 | Original upload | Preserved original bytes |
 | --- | --- |
-| image(20261011-191130).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191134).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191419).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191731).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191738).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191908).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191925).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191929).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-191943).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192518).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192527).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192709).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192724).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192750).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192806).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192817).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192857).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192907).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-192919).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193030).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193035).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193445).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193456).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193505).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193512).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-193911).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194157).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194304).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194330).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194643).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194651).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194700).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194706).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194715).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194722).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194744).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194752).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-194800).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195422).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195441).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195642).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195701).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195918).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195922).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-195956).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200129).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200135).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200201).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200459).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200555).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200947).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-200953).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201001).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201018).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201044).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201107).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201126).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201211).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201217).png | Original retained privately; public PNG upload awaiting explicit approval |
-| image(20261011-201225).png | Original retained privately; public PNG upload awaiting explicit approval |
+| image(20261011-191130).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191134).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191419).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191731).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191738).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191908).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191925).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191929).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-191943).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192518).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192527).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192709).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192724).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192750).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192806).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192817).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192857).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192907).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-192919).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193030).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193035).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193445).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193456).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193505).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193512).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-193911).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194157).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194304).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194330).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194643).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194651).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194700).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194706).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194715).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194722).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194744).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194752).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-194800).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195422).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195441).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195642).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195701).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195918).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195922).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-195956).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200129).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200135).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200201).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200459).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200555).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200947).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-200953).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201001).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201018).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201044).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201107).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201126).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201211).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201217).png | Original retained privately; PNG bytes are not archived in this public repository |
+| image(20261011-201225).png | Original retained privately; PNG bytes are not archived in this public repository |
 
 Key historical views: OPEN #1–#3 `191419 / 191908 / 191943`; MATCHED/PENDING
 `192709 / 192724`; zero-confirmation cycle `192750 / 192806 / 192817`;
