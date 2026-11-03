@@ -2,7 +2,7 @@
 
 ## Current limited hardening amendment
 
-The three authorized corrections are complete: pre-mutation ACTIVE counter
+The three corrections are complete: pre-mutation ACTIVE counter
 validation; centralized ABORTED/EXPIRED counter preflight including the decline
 marker ordering; and machine-checked schema validation in verify_local.py.
 The canonical source changed only by ten added lines. No protocol version,
@@ -28,7 +28,7 @@ this amendment. The prior metadata check below is historical.
 
 No remaining patch blocker. Ready for independent Phase 1 review and merge
 approval; PR remains Draft and unmerged. Full WASM, deployment and consensus
-remain outside this patch and unverified. No Phase 2 work is authorized.
+remain outside this patch and unverified. Phase 2 was outside that historical scope.
 
 The original implementation report follows for historical provenance.
 
@@ -120,7 +120,4 @@ Ordinary pickle cannot serialize dynamic SDK descriptors; the fixed runtime's
 own cloudpickle passes, with independent persisted-byte reconstruction. Python
 3.12.14 on this environment is verified; cross-platform execution is not claimed.
 
-**Ready for separate Phase 2 review, subject to explicit approval.** This is
-not a production-readiness or onchain-success conclusion. Phase 2, merge,
-deployment, transactions, signing, Repository B, frontend and Portal remain
-unauthorized. Execution stops after publishing this Phase 1 Draft checkpoint.
+This historical deterministic checkpoint does not establish production readiness or live consensus. Semantic classification, deployment, transaction and frontend coverage were measured separately in later reports.

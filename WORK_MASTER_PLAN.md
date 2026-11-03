@@ -13,4 +13,4 @@ This page is a historical index for Semantic Cycle Accord (SCA-3 V1). For curren
 
 The documented protocol does not provide payment, custody, service fulfillment or dispute resolution. **ACTIVE represents accepted commitments, not completed delivery.**
 
-Historical milestone logs, failed tests and raw transaction evidence remain at their existing `docs/` and `evidence/` paths. The original dated version of this project-management record is retained in [Git history](https://github.com/halihalibt/semantic-cycle-accord-genlayer/blob/8a09380c06f12afd6ac85197737b0018cd8e594f/WORK_MASTER_PLAN.md); earlier stop conditions apply only to the checkpoint when written. This index is not an execution authorization.
+Historical milestone logs, failed tests and raw transaction evidence remain at their existing `docs/` and `evidence/` paths. The original dated version of this project-management record is retained in [Git history](https://github.com/halihalibt/semantic-cycle-accord-genlayer/blob/8a09380c06f12afd6ac85197737b0018cd8e594f/WORK_MASTER_PLAN.md); earlier verification gaps describe the checkpoint when written. This index records verification evidence.

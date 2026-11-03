@@ -7,7 +7,7 @@ Branch: phase3-security-closure, based exactly on main
 `87fb4c080f6a9c9518e7eb345af0991a24003c47`. PR #1/#2 verified MERGED.
 Draft PR publication identifiers are recorded in evidence/phase3/publication.json
 when published; final HEAD must be resolved from the remote branch/PR. Main is
-unchanged. No merge is authorized.
+unchanged. No merge occurred in this historical checkpoint.
 
 ## Result
 
@@ -65,14 +65,14 @@ document for native archive checksums, runner command and scope. Versions remain
 Python 3.12.14; GenVM v0.2.16; genlayer-test 0.29.2; genvm-linter 0.11.0;
 pytest 9.1.1; Ruff 0.14.0. No alternative network or newer artifact was selected.
 
-## Readiness and stop
+## Historical readiness limits
 
 Suitable for independent Phase 3 review and consideration of a separately
 approved deployment-preflight. It is not evidence of real Stable network
-readiness. Future authorization must preserve the canonical hashes and close
+readiness. Future validation must preserve the canonical hashes and close
 real execution/consensus and node rollback evidence as appropriate before any
 onchain success claim. No critical unresolved architecture defect was identified.
 
 No real deployment, blockchain transaction, wallet signing/credential access,
 paid API, external AI provider, Repository B, frontend, Portal submission or PR
-merge occurred. Execution ends after verified OPEN Draft PR publication. STOP.
+merge occurred. The recorded result is an OPEN Draft PR, not integration.

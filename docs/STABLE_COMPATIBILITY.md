@@ -10,7 +10,7 @@ private key, or network-backed contract integration test was performed.
 Compatibility evidence consists of the exact official v0.2.16 Python runner,
 offline SDK-backed storage execution, SDK semantic validation, and schema
 generation. It is not full GenVM WASM execution, real onchain execution, or
-Validator consensus. Those checks belong to separately authorized later phases.
+Validator consensus. Those checks require separate live measurements.
 
 ## Validated versions and identities
 

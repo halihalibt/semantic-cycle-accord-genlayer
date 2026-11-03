@@ -33,7 +33,7 @@ CONFIRMED UNRESOLVED production vulnerability: none. No source patch was justifi
 
 No substantive prompt, equivalence, persistent schema or API change is proposed.
 Fixing cumulative capacity with a new data layout, or preventing version-based
-reassessment with changed business rules, would require separate authorization.
+reassessment with changed business rules, would change the protocol.
 These design limits do not create a locally reproduced unauthorized activation.
 
 ## Public attack surface review

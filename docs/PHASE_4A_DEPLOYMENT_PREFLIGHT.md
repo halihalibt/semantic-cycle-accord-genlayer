@@ -1,8 +1,8 @@
 # SCA-3 V1 — Deployment preflight
 
-**PHASE 4A COMPLETE — MANUAL DEPLOYMENT PACKAGE READY — AWAITING USER APPROVAL**
+**PHASE 4A COMPLETE — MANUAL DEPLOYMENT PACKAGE READY — HISTORICAL PREPARATION SNAPSHOT**
 
-Manual package readiness only: no deployment authorization, production-readiness claim or real consensus claim. Source/spec/ABI/storage/prompt/tests/toolchain/historical evidence remain unchanged.
+Manual package readiness only: no deployment, production-readiness or real consensus result. Source/spec/ABI/storage/prompt/tests/toolchain/historical evidence remain unchanged.
 
 ## Verified baseline
 
@@ -53,8 +53,8 @@ Pinned runner passes local SDK/native checks. Hosted availability of the exact r
 | create_intent | UNKNOWN | Inspect actual per-call display with verified five arguments |
 | assess_cycle | UNKNOWN | Inspect full three-edge call estimate/budget; account for independent Leader/Validator runs; never multiply an invented fixed cost |
 | confirm_cycle | UNKNOWN | Inspect actual call using verified cycle ID/snapshot |
-| decline_cycle | UNKNOWN | Inspect only if separately authorized later; do not execute for fee measurement |
-| expire_cycle | UNKNOWN | Inspect only if separately authorized later; do not execute for fee measurement |
+| decline_cycle | UNKNOWN | Not executed for fee measurement |
+| expire_cycle | UNKNOWN | Not executed for fee measurement |
 
 Estimated fee, user fee budget, observed consumption, test GEN balance and cash spending are separate. No actual user balance was checked and no consumed fee exists for this project. eth_gasPrice=0 and recognized eth_estimateGas do not establish protocol cost or a method-specific GEN estimate. No concrete estimateGas transaction was supplied. The gen_simulate dispatcher is absent; no simulation executed. Current v0.6 estimate/distribution APIs are documentation context, not verified Stable support. No newer SDK installed. No obsolete sim_getFeeConfig call. The plan is free hosted testing; no paid API or cash purchase was used. If fees are unavailable, keep UNKNOWN and require manual inspection before signing; stop if the cost cannot be understood.
 

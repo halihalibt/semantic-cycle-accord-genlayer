@@ -38,4 +38,4 @@ No FAIL or unexpected semantic acceptance was found in the acquired evidence.
 The historical-read requirements remain PARTIAL; the package does not claim
 that every acceptance gate has independent original raw evidence.
 See [report](PHASE_4C_REPORT.md) and [evidence index](PHASE_4C_E2E_EVIDENCE_INDEX.md).
-Draft publication is the stop boundary; merge is not authorized.
+This historical checkpoint recorded draft publication, not integration.

@@ -23,8 +23,8 @@ Require durable FINALIZED AND successful execution before accepting every import
 
 Use three fresh, genuinely incompatible Intents from the vectors; no consumed reuse. Archive before/after stats and positive Cycle state. One successful finalized negative assessment with independent Validator agreement must persist NOT_MATCHED, one or more NO_FIT/UNSURE labels, cycle_id=0/cycle_status=NONE, no new Cycle, no reservations and all valid negative Intents OPEN/cycle_id=0. On a fresh positive-plus-negative-only run: six Intents, two Assessments, one ACTIVE Cycle. A successful business rejection is not a transaction error. Unexpected FIT acceptance is a semantic finding: preserve evidence, stop, never confirm it or relabel it PASS.
 
-## Residual limitations and stop
+## Residual limitations
 
-Actual real-node rollback for unexpected mid-write failures remains UNVERIFIED. Do not deliberately inject destructive hosted storage faults. Normal successful transactions do not close this risk. If documented node guarantees and safe separately authorized evidence cannot close it, keep it as a residual limitation. Real model correlated errors, prompt injection, live races, finite growing history, version-based retries and real resource limits remain distinct risks. Source/prompt/equivalence changes require a separate review, never a silent patch to obtain acceptance.
+Actual real-node rollback for unexpected mid-write failures remains UNVERIFIED. Do not deliberately inject destructive hosted storage faults. Normal successful transactions do not close this risk. If documented node guarantees and safe diagnostic evidence cannot close it, keep it as a residual limitation. Real model correlated errors, prompt injection, live races, finite growing history, version-based retries and real resource limits remain distinct risks. Source/prompt/equivalence changes require a separate review, never a silent patch to obtain acceptance.
 
-No Portal, Repository B, frontend or later phase work is authorized here. Do not turn this plan into transactions in Phase 4A.
+This is an acceptance plan, not a record of executed transactions; completed cases are indexed separately.

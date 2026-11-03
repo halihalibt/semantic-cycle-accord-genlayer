@@ -1,6 +1,6 @@
 # SCA-3 V1 — Phase 4C real onchain E2E evidence closure
 
-**POSITIVE AND NEGATIVE FINAL OUTCOMES INDEPENDENTLY VERIFIED — HISTORICAL READ GAP RETAINED — DRAFT REVIEW — STOP**
+**POSITIVE AND NEGATIVE FINAL OUTCOMES INDEPENDENTLY VERIFIED — HISTORICAL READ GAP RETAINED — HISTORICAL REVIEW**
 
 Repository A: `halihalibt/semantic-cycle-accord-genlayer`, public, MIT.
 Verified merged main baseline: `2215e6fac7d4922b50ff1546bae76b6e4e3a530c`.
@@ -178,7 +178,7 @@ Still unavailable or untested:
    security certification are NOT RUN / UNVERIFIED. ACTIVE means commitment,
    never actual delivery or a production security guarantee.
 
-## Local verification and stop
+## Local verification scope
 
 Run the package's offline verifier with the frozen lock dependencies:
 `uv run python evidence/phase4c/verify.py`. To reproduce private original-byte checks,
@@ -199,5 +199,3 @@ machine-readable reads. No production code, Prompt, protocol/consensus rules or
 dependency lock is changed. No redeployment, upgrade, signing, business write,
 Repository B, frontend, Portal submission or merge occurred.
 
-**STOP immediately after publishing the Draft PR. Ordinary-chat independent review
-and separate merge approval are required.**

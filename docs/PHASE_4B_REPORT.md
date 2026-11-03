@@ -1,6 +1,6 @@
 # SCA-3 V1 — Phase 4B real deployment evidence closure
 
-**DEPLOYMENT VERIFIED — INITIAL STATE VERIFIED — DRAFT REVIEW — STOP BEFORE PHASE 4C**
+**DEPLOYMENT VERIFIED — INITIAL STATE VERIFIED — HISTORICAL DEPLOYMENT REVIEW**
 
 Repository A: halihalibt/semantic-cycle-accord-genlayer (public, MIT).
 Approved Phase 4A merged main baseline: `61f2149996be02a0da4646082a66f3f03a3cb33c`.
@@ -89,7 +89,7 @@ reservations, confirmations, ACTIVE cycle, negative acceptance and unexpected
 mid-write real-node rollback remain UNVERIFIED / NOT RUN. ACTIVE, when eventually
 reached, means accepted commitment, never delivery.
 
-## Validation and stop
+## Verification scope
 
 Evidence assertions passed: baseline, chain, address/deployer, finality, receipt,
 source byte identity/hash, prompt hash, accepted round and empty initial state.
@@ -102,4 +102,4 @@ published package commit and PR; final branch HEAD resolves from GitHub.
 
 No transaction sent, deployment repeated, wallet signature performed, Intent
 created, AI matching called, Phase 4C entered, Repository B created, frontend
-built, PR merged or Portal submitted. STOP for independent review in ordinary chat.
+built, PR merged or Portal submitted. 

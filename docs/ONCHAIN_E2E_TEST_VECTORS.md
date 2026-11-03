@@ -1,6 +1,6 @@
 # SCA-3 V1 — Exact manual E2E vectors
 
-DOCUMENTED BUT NOT EXECUTED. No wallet addresses, contract address, transaction hashes or snapshot IDs exist in this package. Strings below are exact calldata, each under 512 UTF-8 bytes. All future writes require separate authorization and the user's own signing.
+DOCUMENTED BUT NOT EXECUTED. No wallet addresses, contract address, transaction hashes or snapshot IDs exist in this package. Strings below are exact calldata, each under 512 UTF-8 bytes. Every write requires the wallet holder to review and sign its exact parameters.
 
 ## Execution-time variables
 
@@ -65,7 +65,7 @@ Only if actual reads prove A=1, B=2, C=3 and all versions=1:
 
 Otherwise replace 1/2/3 by actual A/B/C IDs and use their actual corresponding versions in A,C,B order. Construct edges A→C, C→B, B→A. Do not sort the ring. The contract rotates to the smallest ID while preserving direction; use the stored assessment order when comparing classifications.
 
-Require finalized successful assessment plus independent Validator agreement evidence. Record returned assessment_id and cycle_id. Read `get_assessment(actual_assessment_id)` and `get_cycle(actual_cycle_id)`. Require MATCHED, three FIT labels, PENDING cycle, the expected owners/terms/versions/edges, zero confirmations, correct prompt hash and each Intent RESERVED by that cycle. Read the real `snapshot_id` from get_cycle. If result is NOT_MATCHED, preserve evidence and STOP for review; do not run confirmations or try the unchanged assessment again.
+Require finalized successful assessment plus independent Validator agreement evidence. Record returned assessment_id and cycle_id. Read `get_assessment(actual_assessment_id)` and `get_cycle(actual_cycle_id)`. Require MATCHED, three FIT labels, PENDING cycle, the expected owners/terms/versions/edges, zero confirmations, correct prompt hash and each Intent RESERVED by that cycle. Read the real `snapshot_id` from get_cycle. If result is NOT_MATCHED, preserve the unexpected result for diagnosis; do not run confirmations or try the unchanged assessment again.
 
 ## Three confirmations
 
@@ -82,17 +82,17 @@ After A: one flag true, PENDING, all three RESERVED. After B: two flags true, PE
 
 ## Unambiguous negative case — three fresh Intents
 
-Do not reuse the positive cycle's CONSUMED Intents. After separate authorization create a fresh A/B/C trio, using the same positive arguments above EXCEPT replacing negative Wallet B's first two fields with:
+Do not reuse the positive cycle's CONSUMED Intents. Create a fresh A/B/C trio, using the same positive arguments above EXCEPT replacing negative Wallet B's first two fields with:
 
 - offer_description: `Design one original typographic logo reading SCA-3; deliver only one transparent 1024x1024 PNG within 48 hours after cycle activation.`
 - offer_limitations: `PNG raster output only. SVG vector output and editable vector source are explicitly unavailable. Exactly one logo; no animation or brand guide.`
 
 B's need/requirements remain the chart fields above. A still explicitly requires editable SVG plus PNG. C retains the copy need. Recompute the execution-time seven-day expiry for all creates. This completely defines the five arguments for each negative create; only B's stated two fields differ.
 
-Read the actual new IDs, owners and versions. If they happen to be A=4,B=5,C=6, versions=1, assessment arguments are `[[4,6,5],[1,1,1],[[4,6],[6,5],[5,4]]]`; these IDs are conditional, not real facts. Use verified IDs otherwise. An actual participant submits exactly one assessment after authorization.
+Read the actual new IDs, owners and versions. If they happen to be A=4,B=5,C=6, versions=1, assessment arguments are `[[4,6,5],[1,1,1],[[4,6],[6,5],[5,4]]]`; these IDs are conditional, not real facts. Use verified IDs otherwise. An actual participant submits exactly one assessment with an explicit wallet signature.
 
-Intended canonical vector for the conditional ring is `["FIT","FIT","NO_FIT"]`: B→A contradicts the mandatory SVG requirement. It is a semantic expectation, not a forced model return. IF the network finalizes successful agreement on a negative vector, require stored NOT_MATCHED, cycle_id=0, cycle_status=NONE, no new Cycle, no reservations and all three fresh Intents OPEN/cycle_id=0. Compare cycle_total before/after; existing positive ACTIVE Cycle remains unchanged. A successful negative business judgment is not a failed transaction. If the actual judgment unexpectedly accepts, preserve all evidence and STOP; do not confirm or silently change prompt/source.
+Intended canonical vector for the conditional ring is `["FIT","FIT","NO_FIT"]`: B→A contradicts the mandatory SVG requirement. It is a semantic expectation, not a forced model return. IF the network finalizes successful agreement on a negative vector, require stored NOT_MATCHED, cycle_id=0, cycle_status=NONE, no new Cycle, no reservations and all three fresh Intents OPEN/cycle_id=0. Compare cycle_total before/after; existing positive ACTIVE Cycle remains unchanged. A successful negative business judgment is not a failed transaction. If the actual judgment unexpectedly accepts, preserve all unexpected evidence; do not confirm or silently change prompt/source.
 
 ## Ambiguous UNSURE plan — NOT FOR EXECUTION
 
-A separate future authorized trio could replace B's offer with `Design one logo.` and limitations with `Delivery format, size, editability and delivery deadline are unspecified.` while A still requires SVG/PNG, size and deadline. The legal ring stays A→C→B→A. Expected B→A is UNSURE for material missing conditions, which should lead to NOT_MATCHED if valid negative agreement finalizes. Do not run now; prioritize one positive full cycle and one negative assessment. No guarantee that actual models choose the expected label.
+A separate future test trio could replace B's offer with `Design one logo.` and limitations with `Delivery format, size, editability and delivery deadline are unspecified.` while A still requires SVG/PNG, size and deadline. The legal ring stays A→C→B→A. Expected B→A is UNSURE for material missing conditions, which should lead to NOT_MATCHED if valid negative agreement finalizes. Do not run now; prioritize one positive full cycle and one negative assessment. No guarantee that actual models choose the expected label.

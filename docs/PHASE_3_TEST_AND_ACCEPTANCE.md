@@ -77,10 +77,10 @@ network, alternate blockchain, external AI or onchain state were involved.
 | Production assessment/Validator full WASM | NOT RUN |
 | Real model accuracy or injection resistance | NOT TESTED; mocked expected responses only |
 | Real Stable consensus, concurrency and finality | NOT RUN |
-| Live deployment, writes, wallet signatures | NOT RUN / unauthorized in this phase |
+| Live deployment, writes, wallet signatures | NOT RUN in this historical phase |
 | Cross-platform, frontend, Repository B, Portal | NOT RUN / excluded |
 
 These excluded checks are not skipped applicable pytest cases. No confirmed
 critical/high defect remains locally. DESIGN LIMITATION and NOT TESTED findings
 remain visible in the audit. Local closure enables consideration of a future
-separately authorized deployment-preflight; it does not authorize deployment.
+deployment-preflight, which is not deployment evidence.

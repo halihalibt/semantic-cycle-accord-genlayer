@@ -15,7 +15,7 @@ self-referential commit hash. See evidence/phase2/publication.json.
 | --- | --- |
 | Repository A | https://github.com/halihalibt/semantic-cycle-accord-genlayer |
 | Authenticated account / visibility | halihalibt / PUBLIC / MIT |
-| Work branch | phase2-consensus-core; main untouched |
+| Source branch | phase2-consensus-core; main untouched |
 | Starting main | cc773e936cf6184d0b3f9447771ac804e597bfe7; Phase 1 PR #1 merged |
 | Canonical source | contracts/semantic_cycle_accord.py |
 | Source SHA256 | 88de2802bbe4e795dcae2bb0c4028477133d41bdc9b7940d6aef273367ded442 |
@@ -84,9 +84,9 @@ separately fault injected, not a replacement fake voting mechanism.
 Remaining excluded NOT RUN: full WASM, real model accuracy, network consensus,
 live concurrency, deployment/transactions/finality, cross-platform execution,
 frontend/Repository B/Portal. Independent re-execution cannot rule out systematic
-model errors or prompt injection. No applicable authorized local test is unresolved.
+model errors or prompt injection. No applicable local test is unresolved.
 No critical local implementation blocker remains; Phase 3 may be considered only
-after independent review and separate explicit authorization.
+after independent review.
 
 ## Files and reproducibility
 
@@ -113,4 +113,4 @@ Phase 1 byte-layout test. Per-file counts and every node ID are in local-results
 
 No deployment, blockchain transaction, wallet signing/credential access, paid
 external AI, alternate network, Repository B, frontend, PR merge or Portal work
-occurred. Phase 2 Draft publication is complete. Execution STOPs pending independent review.
+occurred. Phase 2 Draft publication is complete. The historical result was published for independent review.
